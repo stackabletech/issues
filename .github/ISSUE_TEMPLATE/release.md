@@ -11,7 +11,16 @@ assignees: ''
 
 ## Release checklists
 
-### Technical tasks
+### Beginning of the release cycle
+
+- [ ] Define product versions to include in the next release
+- [ ] Bump Rust version
+
+### Feature freeze
+
+### End of the release cycle (Release day)
+
+#### Technical tasks
 - [ ] Bump every operator to the latest operator-rs at some point before the feature freeze (meaning: at least once in the release cycle, and leaving sufficient time for testing etc.)
 - [ ] Release operators that are part of the release (if release is needed), see separate checklist below
   - [ ] Set stable operator versions in the `docs/templating_vars.yaml` file before releasing, and back to nightly afterwards
@@ -21,7 +30,7 @@ assignees: ''
 - [ ] Update stackablectl/release.yaml to add the new release
 - [ ] Demos updated if required
 
-### Documentation tasks
+#### Documentation tasks
 - [ ] Create a Changelog including Release Highlights
 - [ ] Write an upgrade guide
   - [ ] Document how to use stackablectl to uninstall all and install new release
@@ -33,12 +42,12 @@ assignees: ''
 - [ ] Bump documentation
   - [ ] Update version of main documentation repo (when it is versioned in the future)
 
-### Marketing tasks
+#### Marketing tasks
 - [ ] Update the homepage banner (as long as we have it) to point to the new release
 - [ ] Write a blogpost announcing the new release (optional)
 - [ ] Produce a release highlight video (optional)
 
-### stackablectl
+#### stackablectl
 
 Actions:
 * Bump and test versions used in demos and stacks
@@ -54,7 +63,7 @@ Actions:
 | demo: kafka-druid-water-level-data | | |
 | demo: hbase-hdfs-load-cycling-data | | |
 
-### Operators
+#### Operators
 
 Actions:
 * Release
