@@ -16,6 +16,10 @@ assignees: ''
 - [ ] Define product versions to include in the next release
 - [ ] Bump Rust version
 
+### Before feature freeze
+
+- [ ] Bump operator-rs to latest version in all operators
+
 ### Feature freeze
 
 ### End of the release cycle (Release day)
