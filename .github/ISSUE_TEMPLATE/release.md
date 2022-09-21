@@ -18,7 +18,7 @@ assignees: ''
 
 ### Before feature freeze
 
-- [ ] Bump operator-rs to latest version in all operators
+- [ ] Bump operator-rs to latest version in all operators. This can be done [in this file](https://github.com/stackabletech/operator-templating/blob/main/repositories.yaml) by chaning `rust_version`. Please be aware that this action will change it for all repositories at the same time. You may want to test individual operators firts.
 
 ### Feature freeze
 
