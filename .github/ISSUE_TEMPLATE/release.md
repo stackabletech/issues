@@ -14,6 +14,7 @@ assignees: ''
 ### Beginning of the release cycle
 
 - [ ] Bump ubi8 base image versions in https://github.com/stackabletech/docker-images (it should be possible to do this by merging the latest Renovate PR mentioning ubi8)
+- [ ] Bump java base image versions in https://github.com/stackabletech/docker-images/tree/main/java-base (it should be possible to do this by merging the latest Renovate PR mentioning ubi8)
 - [ ] Bump Rust version. This can be done [in this file](https://github.com/stackabletech/operator-templating/blob/main/repositories.yaml) by changing `rust_version`. Please be aware that this action will change it for all repositories at the same time (when merging the templating PRs).
 - [ ] Define product versions to include in the next release
 
