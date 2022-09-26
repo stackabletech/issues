@@ -38,8 +38,11 @@ _Legend_:
 
 ## Acceptance 
 
+We want to bump old and new product versions with the latest ubi image releases. This means bumping the stackable version and rerunning the build actions. This includes our [Java base image](https://github.com/stackabletech/docker-images/tree/main/java-base) which shouldbe done before updating any Java based products.
+
 ### Base images
 
+- [ ] Java base image
 - [ ] Airflow
 - [ ] Druid
 - [ ] HBase
