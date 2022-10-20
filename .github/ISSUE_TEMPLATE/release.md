@@ -52,6 +52,7 @@ assignees: ''
 - [ ] Update the homepage banner (as long as we have it) to point to the new release
 - [ ] Write a blogpost announcing the new release (optional)
 - [ ] Produce a release highlight video (optional)
+- [ ] Post an announcement in the GitHub [Discussions Announcement forum](https://github.com/stackabletech/community/discussions/categories/announcements)
 
 #### stackablectl
 
