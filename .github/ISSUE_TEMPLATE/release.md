@@ -79,17 +79,18 @@ Actions:
 
 | Operator  | Version | Getting started (who/status) | Docs (who/status) | Release blockers | PR  |
 | :-------- | :-----: | :--------------------------- | :---------------- | :--------------- | :-- |
-| Airflow   |         |                              |                   |                  |     |
 | Commons   |         |                              |                   |                  |     |
-| Druid     |         |                              |                   |                  |     |
-| HBase     |         |                              |                   |                  |     |
+| Secret    |         |                              |                   |                  |     |
+| Listener  |         |                              |                   |                  |     |
+| OPA       |         |                              |                   |                  |     |
+| ZooKeeper |         |                              |                   |                  |     |
+| Kafka     |         |                              |                   |                  |     |
 | HDFS      |         |                              |                   |                  |     |
 | Hive      |         |                              |                   |                  |     |
-| Kafka     |         |                              |                   |                  |     |
+| HBase     |         |                              |                   |                  |     |
 | NiFi      |         |                              |                   |                  |     |
-| OPA       |         |                              |                   |                  |     |
-| Secret    |         |                              |                   |                  |     |
-| Spark     |         |                              |                   |                  |     |
-| Superset  |         |                              |                   |                  |     |
+| Druid     |         |                              |                   |                  |     |
 | Trino     |         |                              |                   |                  |     |
-| ZooKeeper |         |                              |                   |                  |     |
+| Spark     |         |                              |                   |                  |     |
+| Airflow   |         |                              |                   |                  |     |
+| Superset  |         |                              |                   |                  |     |
