@@ -50,8 +50,13 @@ assignees: ''
 - [ ] Sync supported k8s versions in the READMEs with what is in the release notes (and apply templating)
 
 #### Marketing tasks
+- [ ] Write marketing / customer oriented release summary to be published in the marketing channels 
 - [ ] Update the homepage banner (as long as we have it) to point to the new release
-- [ ] Write a blogpost announcing the new release (optional)
+- [ ] Write a blogpost / news article announcing the new release (optional)
+- [ ] Write a description of new demos for hmepage/demos section
+- [ ] Announce Release on linkedIn
+- [ ] Announce Release on Twitter (optional)
+- [ ] Announce Release in Newsletter (optional)
 - [ ] Produce a release highlight video (optional)
 - [ ] Post an announcement in the GitHub [Discussions Announcement forum](https://github.com/stackabletech/community/discussions/categories/announcements)
 
