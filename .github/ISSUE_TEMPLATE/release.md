@@ -47,6 +47,7 @@ assignees: ''
   - [ ] List supported k8s versions
 - [ ] Bump documentation
   - [ ] Update version of main documentation repo (when it is versioned in the future)
+- [ ] Sync supported k8s versions in the READMEs with what is in the release notes (and apply templating)
 
 #### Marketing tasks
 - [ ] Update the homepage banner (as long as we have it) to point to the new release
