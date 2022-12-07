@@ -20,24 +20,27 @@ assignees: ''
 
 ### Before feature freeze
 
-- [ ] Bump operator-rs to latest version in all operators
+- [ ] Bump operator-rs to latest version in all operators. When using release branches, this will usually be the previous platform release version. This should be done early in the release cycle to leave sufficient time for testing etc.
+
+One-off tasks before the first release using release branches:
+
+- [ ] Ensure that versions in the main branches for the the operators have been set to "0.0.0-nightly" (this will remain unchanged in the main branch)
+- [ ] Ensure that automatic renovate runs have been disabled and do it manually once (or more if needed) at the beginning of the dev cycle (we update the dependencies *after the release is complete* in the *main* branch - never in release branches)
 
 ### Feature freeze
+
+This will not be so crucial as we are using release branches, but is nonetheless sensible as it will make it easier to cherry-pick any release-related bugfixes from main into the release branch.
 
 ### End of the release cycle (Release day)
 
 #### Technical tasks
-- [ ] Bump every operator to the latest operator-rs at some point before the feature freeze (meaning: at least once in the release cycle, and leaving sufficient time for testing etc.)
-- [ ] Release operators that are part of the release (if release is needed), see separate checklist below
-  - [ ] Set stable operator versions in the `docs/templating_vars.yaml` file before releasing, and back to nightly afterwards
-  - [ ] Release the actual operator
-  - [ ] Bump the operators to the new -nightly version
-- [ ] Integration tests passed
-- [ ] Update stackablectl/release.yaml to add the new release
-- [ ] Demos updated if required
+- [ ] Create release branches for docker-images and operators (see stackable-utils for script to create branches)
+- [ ] Create release tag(s) for docker-images and operators (see stackable-utils for scripts to create tags)
+- [ ] Check integration tests
+- [ ] Check all stackablectl Stacks and Demos
 
 #### Documentation tasks
-- [ ] Create a Changelog including Release Highlights
+- [ ] Check the Changelog and/or issue labels to compile Release Highlights
 - [ ] Write an upgrade guide
   - [ ] Document how to use stackablectl to uninstall all and install new release
   - [ ] Document how to use helm to uninstall all and install new release
@@ -45,12 +48,11 @@ assignees: ''
   - [ ] List dropped supported product versions (if there are some)
   - [ ] List dropped supported operators (if there are some)
   - [ ] List supported k8s versions
-- [ ] Bump documentation
-  - [ ] Update version of main documentation repo (when it is versioned in the future)
+  - [ ] Update version of main documentation repo
 - [ ] Sync supported k8s versions in the READMEs with what is in the release notes (and apply templating)
 
 #### Marketing tasks
-- [ ] Write marketing / customer oriented release summary to be published in the marketing channels 
+- [ ] Write marketing / customer oriented release summary to be published in the marketing channels
 - [ ] Update the homepage banner (as long as we have it) to point to the new release
 - [ ] Write a blogpost / news article announcing the new release (optional)
 - [ ] Write a description of new demos for hmepage/demos section
@@ -63,28 +65,35 @@ assignees: ''
 #### stackablectl
 
 Actions:
-* Bump and test versions used in demos and stacks
+* Test stacks
 
-| stackablectl element | Who | Status |
+| stackablectl stack | Who | Status |
 | :--- | :--- | :--- |
 | stack: kafka-druid-superset-s3 |  |  |
 | stack: trino-superset-s3 | |  |
 | stack: airflow | |  |
 | stack: hdfs-hbase | | |
+(extend as necessary)
+
+* Test demos
+
+| stackablectl demo | Who | Status |
+| :--- | :--- | :--- |
 | demo: trino-taxi-data | | |
 | demo: kafka-druid-earthquake-data | ||
 | demo: kafka-druid-water-level-data | | |
 | demo: hbase-hdfs-load-cycling-data | | |
+(extend as necessary)
 
 #### Operators
 
 Actions:
 * Release
 * Test getting started guides
-* read/test docs and examples (where relevant)
+* read/test docs (and examples where relevant)
 
 | Operator  | Version | Getting started (who/status) | Docs (who/status) | Release blockers | PR  |
-| :-------- | :-----: | :--------------------------- | :---------------- | :--------------- | :-- |
+| :--- | :---: | :--- | :--- | :--- | :--- |
 | Commons   |         |                              |                   |                  |     |
 | Secret    |         |                              |                   |                  |     |
 | Listener  |         |                              |                   |                  |     |
