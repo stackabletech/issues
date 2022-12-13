@@ -11,7 +11,7 @@ assignees: ''
 
 ## Release checklists
 
-### Beginning of the release cycle
+### Beginning of the development cycle directly after the previous release
 
 - [ ] Bump ubi8 base image versions in https://github.com/stackabletech/docker-images (it should be possible to do this by merging the latest Renovate PR mentioning ubi8)
 - [ ] Bump java base image versions in https://github.com/stackabletech/docker-images/tree/main/java-base (it should be possible to do this by merging the latest Renovate PR mentioning ubi8)
