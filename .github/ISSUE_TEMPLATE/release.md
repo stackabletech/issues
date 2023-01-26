@@ -11,25 +11,24 @@ assignees: ''
 
 ## Release checklists
 
-### Beginning of the development cycle directly after the previous release
+### General pre-requisites (before feature freeze)
 
-- [ ] Bump ubi8 base image versions in https://github.com/stackabletech/docker-images (it should be possible to do this by merging the latest Renovate PR mentioning ubi8)
-- [ ] Bump java base image versions in https://github.com/stackabletech/docker-images/tree/main/java-base (it should be possible to do this by merging the latest Renovate PR mentioning ubi8)
-- [ ] Bump Rust version. This can be done [in this file](https://github.com/stackabletech/operator-templating/blob/main/repositories.yaml) by changing `rust_version`. Please be aware that this action will change it for all repositories at the same time (when merging the templating PRs).
+- [ ] Run renovate manually
+- [ ] Check/bump ubi8 base image (it should be possible to do this by merging the latest Renovate PR mentioning ubi8)
+- [ ] Check/bump java base image (it should be possible to do this by merging the latest Renovate PR mentioning ubi8)
+- [ ] Check/bump the vector base image
+- [ ] Check/bump the stackable base image
+- [ ] Bump Rust version. This can be done [in this file](https://github.com/stackabletech/operator-templating/blob/main/repositories.yaml) by changing `rust_version` and also for the ubi base iamge [here](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile#L25). Please be aware that this action will change it for all repositories at the same time (when merging the templating PRs).
 - [ ] Define product versions to include in the next release
+- [ ] Bump operator-rs to latest version in all operators. This should be done early in the release cycle to leave sufficient time for testing etc.
+- [ ] Run getting-started scripts if they have not yet been incorporated into integration tests
 
-### Before feature freeze
-
-- [ ] Bump operator-rs to latest version in all operators. When using release branches, this will usually be the previous platform release version. This should be done early in the release cycle to leave sufficient time for testing etc.
-
-One-off tasks before the first release using release branches:
-
-- [ ] Ensure that versions in the main branches for the the operators have been set to "0.0.0-nightly" (this will remain unchanged in the main branch)
-- [ ] Ensure that automatic renovate runs have been disabled and do it manually once (or more if needed) at the beginning of the dev cycle (we update the dependencies *after the release is complete* in the *main* branch - never in release branches)
+### Other release-specific pre-requisites
+- [ ] ...
 
 ### Feature freeze
 
-This will not be so crucial as we are using release branches, but is nonetheless sensible as it will make it easier to cherry-pick any release-related bugfixes from main into the release branch.
+This will not be so crucial with release branches, but is nonetheless sensible as it will make it easier to cherry-pick any release-related bugfixes from main into the release branch.
 
 ### End of the release cycle (Release day)
 
@@ -37,7 +36,10 @@ This will not be so crucial as we are using release branches, but is nonetheless
 - [ ] Create release branches for docker-images and operators (see stackable-utils for script to create branches)
 - [ ] Create release tag(s) for docker-images and operators (see stackable-utils for scripts to create tags)
 - [ ] Check integration tests
-- [ ] Check all stackablectl Stacks and Demos
+- [ ] Check getting started scripts (optional, as may be covered by integration tests)
+- [ ] Check new stackablectl Stacks and Demos
+  - [ ] test with locally updated (to new release number) `releases.yaml`
+- [ ] update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
 
 #### Documentation tasks
 - [ ] Check the Changelog and/or issue labels to compile Release Highlights
@@ -48,8 +50,10 @@ This will not be so crucial as we are using release branches, but is nonetheless
   - [ ] List dropped supported product versions (if there are some)
   - [ ] List dropped supported operators (if there are some)
   - [ ] List supported k8s versions
-  - [ ] Update version of main documentation repo
 - [ ] Sync supported k8s versions in the READMEs with what is in the release notes (and apply templating)
+- [ ] Update version of main documentation repo
+
+Marketing tasks can now reference published documentation.
 
 #### Marketing tasks
 - [ ] Write marketing / customer oriented release summary to be published in the marketing channels
@@ -65,47 +69,36 @@ This will not be so crucial as we are using release branches, but is nonetheless
 #### stackablectl
 
 Actions:
-* Test stacks
+* Test new stacks
 
-| stackablectl stack | Who | Status |
-| :--- | :--- | :--- |
-| stack: kafka-druid-superset-s3 |  |  |
-| stack: trino-superset-s3 | |  |
-| stack: airflow | |  |
-| stack: hdfs-hbase | | |
+| stackablectl stack | status |
+| :--- | :--- |
+| | |
 (extend as necessary)
 
-* Test demos
+* Test new demos
 
-| stackablectl demo | Who | Status |
-| :--- | :--- | :--- |
-| demo: trino-taxi-data | | |
-| demo: kafka-druid-earthquake-data | ||
-| demo: kafka-druid-water-level-data | | |
-| demo: hbase-hdfs-load-cycling-data | | |
+| stackablectl demo | status |
+| :--- | :--- |
+| | |
 (extend as necessary)
 
 #### Operators
 
-Actions:
-* Release
-* Test getting started guides
-* read/test docs (and examples where relevant)
-
-| Operator  | Version | Getting started (who/status) | Docs (who/status) | Release blockers | PR  |
-| :--- | :---: | :--- | :--- | :--- | :--- |
-| Commons   |         |                              |                   |                  |     |
-| Secret    |         |                              |                   |                  |     |
-| Listener  |         |                              |                   |                  |     |
-| OPA       |         |                              |                   |                  |     |
-| ZooKeeper |         |                              |                   |                  |     |
-| Kafka     |         |                              |                   |                  |     |
-| HDFS      |         |                              |                   |                  |     |
-| Hive      |         |                              |                   |                  |     |
-| HBase     |         |                              |                   |                  |     |
-| NiFi      |         |                              |                   |                  |     |
-| Druid     |         |                              |                   |                  |     |
-| Trino     |         |                              |                   |                  |     |
-| Spark     |         |                              |                   |                  |     |
-| Airflow   |         |                              |                   |                  |     |
-| Superset  |         |                              |                   |                  |     |
+| Operator  | Integration tests | Getting started scripts |
+| :--- | :---: | :--- |
+| Airflow   |         |                              |
+| Commons   |         |                              |
+| Druid     |         |                              |
+| HBase     |         |                              |
+| HDFS      |         |                              |
+| Hive      |         |                              |
+| Kafka     |         |                              |
+| Listener  |         |                              |
+| NiFi      |         |                              | 
+| OPA       |         |                              |
+| Secret    |         |                              |
+| Spark     |         |                              |
+| Superset  |         |                              |
+| Trino     |         |                              |
+| ZooKeeper |         |                              |
