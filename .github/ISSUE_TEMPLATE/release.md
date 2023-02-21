@@ -52,6 +52,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
   - [ ] List supported k8s versions
 - [ ] Sync supported k8s versions in the READMEs with what is in the release notes (and apply templating)
 - [ ] Update version of main documentation repo
+- [ ] Set the release to "Released" in the Feature Tracker and create a new release
 
 Marketing tasks can now reference published documentation.
 
