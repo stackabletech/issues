@@ -65,6 +65,8 @@ Marketing tasks can now reference published documentation.
 - [ ] Announce Release on Twitter (optional)
 - [ ] Announce Release in Newsletter (optional)
 - [ ] Produce a release highlight video (optional)
+- [ ] Announce Release on Hacker News (optional)?
+- [ ] Inform Kubernetes Podcast about Release (optional)
 - [ ] Post an announcement in the GitHub [Discussions Announcement forum](https://github.com/stackabletech/community/discussions/categories/announcements)
 
 #### stackablectl
