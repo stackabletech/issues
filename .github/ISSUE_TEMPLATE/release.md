@@ -62,6 +62,7 @@ Marketing tasks can now reference published documentation.
 - [ ] Announce Release on Hacker News (optional)?
 - [ ] Inform Kubernetes Podcast about Release (optional)
 - [ ] Post an announcement in the GitHub [Discussions Announcement forum](https://github.com/stackabletech/community/discussions/categories/announcements)
+- [ ] Post an announcement in Discord
 
 ### Post-release tasks
 - [ ] Bump Rust version. This can be done [in this file](https://github.com/stackabletech/operator-templating/blob/main/repositories.yaml) by changing `rust_version` and also for the ubi base iamge [here](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile#L25). Please be aware that this action will change it for all repositories at the same time (when merging the templating PRs).
