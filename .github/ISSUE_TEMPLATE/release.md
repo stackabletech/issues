@@ -61,7 +61,7 @@ Marketing tasks can now reference published documentation.
 - [ ] Produce a release highlight video (optional)
 - [ ] Announce Release on Hacker News (optional)?
 - [ ] Inform Kubernetes Podcast about Release (optional)
-- [ ] Post an announcement in the GitHub [Discussions Announcement forum](https://github.com/stackabletech/community/discussions/categories/announcements)
+- [ ] Post an announcement in the GitHub [Discussions Announcement forum](https://github.com/stackabletech/community/discussions/categories/announcements) and make it a pinned discussion while at the same time removing the old pinned thread
 - [ ] Post an announcement in Discord
 
 ### Post-release tasks
