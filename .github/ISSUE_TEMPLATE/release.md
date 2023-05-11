@@ -47,6 +47,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Sync supported k8s versions in the READMEs with what is in the release notes (and apply templating)
 - [ ] Update version of main documentation repo
 - [ ] Set the release to "Released" in the Feature Tracker and create a new release
+- [ ] Check that an upgrade can be performed on an existing cluster without data loss.
 
 Marketing tasks can now reference published documentation.
 
