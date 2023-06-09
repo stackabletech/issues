@@ -44,6 +44,7 @@ We want to bump old and new product versions with the latest ubi image releases.
 
 - [ ] Java base image
 - [ ] Check if JMX Prometheus Exporter was updated: https://github.com/prometheus/jmx_exporter
+- [ ] Check if Vector has been updated
 - [ ] Airflow
 - [ ] Druid
 - [ ] HBase
