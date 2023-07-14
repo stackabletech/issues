@@ -51,6 +51,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 
 Marketing tasks can now reference published documentation.
 
+```[tasklist]
 #### Marketing tasks
 - [ ] Write marketing / customer oriented release summary to be published in the marketing channels
 - [ ] Update the homepage banner (as long as we have it) to point to the new release
@@ -64,6 +65,9 @@ Marketing tasks can now reference published documentation.
 - [ ] Post an announcement in the GitHub [Discussions Announcement forum](https://github.com/stackabletech/community/discussions/categories/announcements) and make it a pinned discussion while at the same time removing the old pinned thread
 - [ ] Post an announcement in Discord
 - [ ] Post an announcement on DOK Community (Ping Lars)
+- [ ] Post an announcement via OSBA (Ping Lars)
+```
+
 
 ### Post-release tasks
 - [ ] Bump Rust version. This can be done [in this file](https://github.com/stackabletech/operator-templating/blob/main/repositories.yaml) by changing `rust_version` and also for the ubi base iamge [here](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile#L25). Please be aware that this action will change it for all repositories at the same time (when merging the templating PRs).
