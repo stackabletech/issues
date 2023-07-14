@@ -14,6 +14,9 @@ assignees: ''
 ### General pre-requisites (before feature freeze)
 
 - [ ] Bump operator-rs to latest version in all operators. This should be done early in the release cycle to leave sufficient time for testing etc.
+- [ ] Check Rust and e.g. cargo deps versions
+- [ ] Run/check getting-started scripts
+- [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes
 
 ### Other release-specific pre-requisites
 - [ ] ...
@@ -25,29 +28,29 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 ### End of the release cycle (Release day)
 
 #### Technical tasks
-- [ ] Create release branches for docker-images and operators (see stackable-utils for script to create branches)
-- [ ] Create release tag(s) for docker-images and operators (see stackable-utils for scripts to create tags)
+- [ ] Create release branches for docker-images (see stackable-utils for script to create branches)
+- [ ] Create release tag(s) for docker-images (see stackable-utils for scripts to create tags)
+- [ ] Create release branches for operators (see stackable-utils for script to create branches)
+- [ ] Create release tag(s) for operators (see stackable-utils for scripts to create tags)
 - [ ] Update changelogs in main branches (see stackable-utils for script to do this)
-- [ ] Check integration tests (see table below)
-- [ ] Check getting started scripts (see table below)
-- [ ] Check new stackablectl Stacks and Demos (see table below)
-  - [ ] Test with locally updated (to new release number) `releases.yaml`
-  - [ ] Check stackablectl release upgrade with deployed products (does everything still spin up?) 
+- [ ] Check integration tests (use a table in Nuclino - easier for concurrent editing)
+- [ ] Check getting started scripts (use a table in Nuclino)
+- [ ] Check (new) stackablectl Stacks and Demos (use a table in Nuclino)
+- [ ] Test with locally updated (to new release number) `releases.yaml`
 - [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
+- [ ] Check that an upgrade can be performed on an existing cluster without data loss.
 
 #### Documentation tasks
 - [ ] Check the Changelog and/or issue labels to compile Release Highlights
-- [ ] Write an upgrade guide
-  - [ ] Document how to use stackablectl to uninstall all and install new release
-  - [ ] Document how to use helm to uninstall all and install new release
-  - [ ] Every breaking change of all our operators
-  - [ ] List dropped supported product versions (if there are some)
-  - [ ] List dropped supported operators (if there are some)
-  - [ ] List supported k8s versions
-- [ ] Sync supported k8s versions in the READMEs with what is in the release notes (and apply templating)
+- [ ] Upgrade guide: Document how to use stackablectl to uninstall all and install new release
+- [ ] Upgrade guide: Document how to use helm to uninstall all and install new release
+- [ ] Upgrade guide: Every breaking change of all our operators
+- [ ] Upgrade guide: List dropped supported product versions (if there are some)
+- [ ] Upgrade guide: List dropped supported operators (if there are some)
+- [ ] Upgrade guide: List supported k8s versions
 - [ ] Update version of main documentation repo
 - [ ] Set the release to "Released" in the Feature Tracker and create a new release
-- [ ] Check that an upgrade can be performed on an existing cluster without data loss.
+- [ ] Add documentation note (release notes): when we change the default pvc size, the user needs to delete the sts, as we are not allowed to change the pvc in sts spec
 
 Marketing tasks can now reference published documentation.
 
@@ -75,41 +78,3 @@ Marketing tasks can now reference published documentation.
 - [ ] Check/bump ubi8 base image
 - [ ] Create issue for release-specific Openshift certification
 - [ ] Define product versions to include in the next release
-
-### stackablectl
-
-Actions:
-* Test new stacks
-
-| stackablectl stack | status |
-| :--- | :--- |
-| | |
-(extend as necessary)
-
-* Test new demos
-
-| stackablectl demo | status |
-| :--- | :--- |
-| | |
-(extend as necessary)
-
-### Operators
-
-| Operator  | Integration tests | Getting started scripts |
-| :--- | :---: | :--- |
-| Airflow   |         |                              |
-| Commons   |         |                              |
-| Druid     |         |                              |
-| HBase     |         |                              |
-| HDFS      |         |                              |
-| Hive      |         |                              |
-| Kafka     |         |                              |
-| Listener  |         |                              |
-| NiFi      |         |                              | 
-| OPA       |         |                              |
-| Secret    |         |                              |
-| Spark     |         |                              |
-| Superset  |         |                              |
-| Trino     |         |                              |
-| ZooKeeper |         |                              |
-
