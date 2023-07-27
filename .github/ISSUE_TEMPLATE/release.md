@@ -44,6 +44,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
 - [ ] Check that an upgrade can be performed on an existing cluster without data loss.
 ```
+
 ```[tasklist]
 #### Documentation tasks
 - [ ] Check the Changelog and/or issue labels to compile Release Highlights
