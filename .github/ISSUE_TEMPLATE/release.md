@@ -11,15 +11,18 @@ assignees: ''
 
 ## Release checklists
 
+```[tasklist]
 ### General pre-requisites (before feature freeze)
-
 - [ ] Bump operator-rs to latest version in all operators. This should be done early in the release cycle to leave sufficient time for testing etc.
 - [ ] Check Rust and e.g. cargo deps versions
 - [ ] Run/check getting-started scripts
 - [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes
+```
 
+```[tasklist]
 ### Other release-specific pre-requisites
 - [ ] ...
+```
 
 ### Feature freeze
 
@@ -27,6 +30,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 
 ### End of the release cycle (Release day)
 
+```[tasklist]
 #### Technical tasks
 - [ ] Create release branches for docker-images (see stackable-utils for script to create branches)
 - [ ] Create release tag(s) for docker-images (see stackable-utils for scripts to create tags)
@@ -39,7 +43,8 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Test with locally updated (to new release number) `releases.yaml`
 - [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
 - [ ] Check that an upgrade can be performed on an existing cluster without data loss.
-
+```
+```[tasklist]
 #### Documentation tasks
 - [ ] Check the Changelog and/or issue labels to compile Release Highlights
 - [ ] Upgrade guide: Document how to use stackablectl to uninstall all and install new release
@@ -51,6 +56,8 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Update version of main documentation repo
 - [ ] Set the release to "Released" in the Feature Tracker and create a new release
 - [ ] Add documentation note (release notes): when we change the default pvc size, the user needs to delete the sts, as we are not allowed to change the pvc in sts spec
+- [ ] Update the getting-started page in the main docs and check it works with this release: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting_started.adoc
+```
 
 Marketing tasks can now reference published documentation.
 
@@ -71,10 +78,11 @@ Marketing tasks can now reference published documentation.
 - [ ] Post an announcement via OSBA (Ping Lars)
 ```
 
-
+```[tasklist]
 ### Post-release tasks
 - [ ] Bump Rust version. This can be done [in this file](https://github.com/stackabletech/operator-templating/blob/main/repositories.yaml) by changing `rust_version` and also for the ubi base image [here](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile#L25). Please be aware that this action will change it for all repositories at the same time (when merging the templating PRs).
 - [ ] Run renovate manually
 - [ ] Check/bump ubi8 base image
 - [ ] Create issue for release-specific Openshift certification
 - [ ] Define product versions to include in the next release
+```
