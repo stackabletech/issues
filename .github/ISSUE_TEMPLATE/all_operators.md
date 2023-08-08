@@ -6,7 +6,6 @@
 - [ ] hdfs
 - [ ] hive
 - [ ] kafka
-- [ ] listener
 - [ ] nifi
 - [ ] opa
 - [ ] spark-k8s
