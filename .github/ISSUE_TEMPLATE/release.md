@@ -36,6 +36,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Create release tag(s) for docker-images (see stackable-utils for scripts to create tags)
 - [ ] Create release branches for operators (see stackable-utils for script to create branches)
 - [ ] Create release tag(s) for operators (see stackable-utils for scripts to create tags)
+- [ ] Ping the stackable-ionos-tech channel or anyone responsible once all tags are created
 - [ ] Update changelogs in main branches (see stackable-utils for script to do this)
 - [ ] Check integration tests (use a table in Nuclino - easier for concurrent editing)
 - [ ] Check getting started scripts (use a table in Nuclino)
