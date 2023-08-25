@@ -73,11 +73,12 @@ Marketing tasks can now reference published documentation.
 - [ ] Announce Release on Twitter (optional)
 - [ ] Announce Release in Newsletter (optional)
 - [ ] Produce a release highlight video (optional)
-- [ ] Announce Release on Hacker News (optional)?
+- [ ] Announce Release on Hacker News (optional)
 - [ ] Post an announcement in the GitHub [Discussions Announcement forum](https://github.com/stackabletech/community/discussions/categories/announcements) and make it a pinned discussion while at the same time removing the old pinned thread
 - [ ] Post an announcement in Discord
-- [ ] Post an announcement on DOK Community (Ping Lars)
+- [ ] Post an announcement on DOK Community in the #be-shameless Channel (Ping Lars or Jim)
 - [ ] Post an announcement via OSBA (Ping Lars)
+- [ ] Send announcement to Kubernetes Podcast (Ping Lars)
 ```
 
 ```[tasklist]
