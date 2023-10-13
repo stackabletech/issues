@@ -88,6 +88,7 @@ Marketing tasks can now reference published documentation.
 - [ ] Run renovate manually
 - [ ] Check/bump versions of kube-rs and k8s-openapi (also checking the version of k8s we build against)
 - [ ] Check/bump ubi8 base image
+- [ ] Check/bump preflight
 - [ ] Create issue for release-specific Openshift certification
 - [ ] Define product versions to include in the next release
 ```
