@@ -17,6 +17,7 @@ assignees: ''
 - [ ] Check Rust and e.g. cargo deps versions
 - [ ] Run/check getting-started scripts
 - [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes
+- [ ] Test SDP release upgrade against 2-3 demos (i.e. install release, run demo, bump release, check what needs to be patched)
 ```
 
 ```[tasklist]
