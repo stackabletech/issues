@@ -47,9 +47,9 @@ We want to bump old and new product versions with the latest ubi image releases.
 - [ ] Check if Vector has been updated
 - [ ] Airflow
 - [ ] Druid
-- [ ] HBase
+- [ ] HBase (including HBase Operator Tools)
 - [ ] Hadoop HDFS
-- [ ] Hive
+- [ ] Hive (including JDBC driver)
 - [ ] Kafka
 - [ ] NiFi
 - [ ] OPA
