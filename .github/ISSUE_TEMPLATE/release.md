@@ -17,6 +17,7 @@ assignees: ''
 - [ ] Check Rust and e.g. cargo deps versions
 - [ ] Run/check getting-started scripts
 - [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes
+- [ ] TestOLM packages on Openshift
 - [ ] Test SDP release upgrade against 2-3 demos (i.e. install release, run demo, bump release, check what needs to be patched)
 ```
 
@@ -40,7 +41,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Create release tag for stackable-cockpit (optional, highly experimental, requires manual tag creation)
 - [ ] Ping the stackable-ionos-tech channel or anyone responsible once all tags are created
 - [ ] Update changelogs in main branches (see stackable-utils for script to do this)
-- [ ] Check integration tests (use a table in Nuclino - easier for concurrent editing)
+- [ ] Check (selected) integration tests (use a table in Nuclino - easier for concurrent editing)
 - [ ] Check getting started scripts (use a table in Nuclino)
 - [ ] Check (new) stackablectl Stacks and Demos (use a table in Nuclino)
 - [ ] Test with locally updated (to new release number) `releases.yaml`
@@ -59,7 +60,6 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Upgrade guide: List supported k8s versions
 - [ ] Update version of main documentation repo
 - [ ] Set the release to "Released" in the Feature Tracker and create a new release
-- [ ] Add documentation note (release notes): when we change the default pvc size, the user needs to delete the sts, as we are not allowed to change the pvc in sts spec
 - [ ] Update the getting-started page in the main docs and check it works with this release: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting_started.adoc
 ```
 
@@ -81,6 +81,7 @@ Marketing tasks can now reference published documentation.
 - [ ] Post an announcement on DOK Community in the #be-shameless Channel (Ping Lars or Jim)
 - [ ] Post an announcement via OSBA (Ping Lars)
 - [ ] Send announcement to Kubernetes Podcast (Ping Lars)
+- [ ] Send announcement to Heiser
 ```
 
 ```[tasklist]
