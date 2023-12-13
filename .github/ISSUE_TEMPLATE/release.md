@@ -72,7 +72,6 @@ Marketing tasks can now reference published documentation.
 - [ ] Write a blogpost / news article announcing the new release (optional)
 - [ ] Write a description of new demos for hmepage/demos section
 - [ ] Announce Release on linkedIn
-- [ ] Announce Release on Twitter (optional)
 - [ ] Announce Release in Newsletter (optional)
 - [ ] Produce a release highlight video (optional)
 - [ ] Announce Release on Hacker News (optional)
