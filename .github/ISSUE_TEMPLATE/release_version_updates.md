@@ -44,6 +44,7 @@ Nothing currently needs to be updated here
 - `New` versions need to be added to `conf.py` and added to the documentation page for the operator
 - `Deprecated` need to be updated in the documentation
 - `Removed` need to be updated in `conf.py` and removed from the documentation page
+- Make sure to _also_ check any other dependencies we might use in a Docker image! (e.g. git sync, prometheus exporter etc.)
 
 
 #### Airflow
