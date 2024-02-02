@@ -65,6 +65,7 @@ Nothing currently needs to be updated here
 - [ ] Removed:
 - [ ] Documentation is updated
 - [ ] Operator is updated
+- [ ] Update the [druid-opa-authorizer](https://github.com/stackabletech/druid-opa-authorizer/) with the new set of versions
 ```
 
 #### HBase, Phoenix, Omid
