@@ -1,40 +1,15 @@
 ---
 name: Product version updates
-about: This template can be used to track the versions of the products we want to release
+about: Use this template once per SDP release to track the product updates we need to do
 title: Update products
 labels: ''
 assignees: ''
 
 ---
 
-This ticket is used to fix the versions of upstream products we want to support (in addition to the currently supported ones).
-We do _not_ need to always support the latest versions.
-For example: With new major and minor releases we _may_ want to wait for a first patch release (e.g. don't support 3.0.0 but 3.0.1 instead, or 2.4.2 instead of 2.4.0).
+This issue tracks the product versions and the changes we need to do to them in our SDP release XX.XX.
 
-In addition to the new and/or removed product versions we also want to update our base image to a new version at least once per release.
-
-# Product versions
-
-_Legend_:
-* _Latest (Upstream)_: The latest upstream version of the product
-* _Latest (Stackable)_: The latest version that we at Stackable currently support
-* _New_: A list of new versions we want to support in the upcoming release
-* _Removed_: A list of versions we will not support anymore
-
-| Product   | Latest (Upstream) | Latest (Stackable) | New | Removed |
-|-----------|-------------------|--------------------|-----|---------|
-| Airflow   | | | | |
-| Druid     | | | | |
-| HBase     | | | | |
-| HDFS      | | | | |
-| Hive      | | | | |
-| Kafka     | | | | |
-| NiFi      | | | | |
-| OPA       | | | | |
-| Spark-k8s | | | | |
-| Superset  | | | | |
-| Trino     | | | | |
-| ZooKeeper | | | | |
+The single source of truth for this data is a [spreadsheet](https://docs.google.com/spreadsheets/d/1uR6nJR3nMxSI51dPFbVJTqA4R3p7UkGU5acrXJNOyNQ/edit#gid=866098130) we filled colaboratively in a planning meeting.
 
 ## Acceptance 
 
@@ -42,24 +17,159 @@ We want to bump old and new product versions with the latest ubi image releases.
 
 ### Base images
 
-- [ ] Java base image
-- [ ] Check if JMX Prometheus Exporter was updated: https://github.com/prometheus/jmx_exporter
-- [ ] Check if Vector has been updated
-- [ ] Airflow
-- [ ] Druid
-- [ ] HBase (including HBase Operator Tools)
-- [ ] Hadoop HDFS
-- [ ] Hive (including JDBC driver)
-- [ ] Kafka
-- [ ] NiFi
-- [ ] OPA
-- [ ] Spark
-- [ ] Superset
-- [ ] Trino
-- [ ] ZooKeeper
+#### UBI8 Rust Builder
 
-### New versions
+[ubi8-rust-builder](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile)
 
-This is a tasklist pointing to issues in the product repositories:
+```[tasklist]
+- [ ] Update UBI version
+- [ ] Update Cargo CycloneDX and Cargo Auditable
+- [ ] Update Rust Toolchain version
+```
 
-- [ ] ....
+#### Java Base
+
+Nothing currently needs to be updated here
+
+#### Stackable Base
+
+[stackable-base](https://github.com/stackabletech/docker-images/blob/main/stackable-base/Dockerfile)
+
+```[tasklist]
+- [ ] Update UBI version
+```
+
+### Product Images
+
+- `New` versions need to be added to `conf.py` and added to the documentation page for the operator
+- `Deprecated` need to be updated in the documentation
+- `Removed` need to be updated in `conf.py` and removed from the documentation page
+
+
+#### Airflow
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### Druid
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### HBase, Phoenix, Omid
+
+NOTE: Make sure to also consider Omid & Phoenix
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### HDFS
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### Hive
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### Kafka
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### NiFi
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### OpenPolicyAgent (OPA)
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### Spark
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### Superset
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### Trino
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+#### ZooKeeper
+
+```[tasklist]
+- [ ] New:
+- [ ] Deprecated: 
+- [ ] Removed:
+- [ ] Documentation is updated
+- [ ] Operator is updated
+```
+
+### Misc
+
+```[tasklist]
+- [ ] Update the Stackable DB
+```
