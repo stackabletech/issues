@@ -88,6 +88,7 @@ NOTE: Make sure to also consider Omid & Phoenix
 - [ ] Removed:
 - [ ] Documentation is updated
 - [ ] Operator is updated
+- [ ] Update Authorizer, Group Mapper and Rack Awareness stuff if needed
 ```
 
 #### Hive
