@@ -92,4 +92,5 @@ Marketing tasks can now reference published documentation.
 - [ ] Check/bump preflight
 - [ ] Create issue for release-specific Openshift certification
 - [ ] Define product versions to include in the next release
+- [ ] Add branch protection to release branches once they are stable
 ```
