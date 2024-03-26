@@ -41,6 +41,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Create release tag(s) for operators (see stackable-utils for scripts to create tags)
 - [ ] Create release tag for stackable-cockpit (optional, highly experimental, requires manual tag creation)
 - [ ] Update changelogs in main branches (see stackable-utils for script to do this)
+- [ ] Generate CRD docs [website](https://crds.stackable.tech/) for the new release by following these [instructions](https://github.com/stackabletech/crddocs)
 - [ ] Check (selected) integration tests (use a table in Nuclino - easier for concurrent editing)
 - [ ] Check getting started scripts (use a table in Nuclino)
 - [ ] Check (new) stackablectl Stacks and Demos (use a table in Nuclino)
