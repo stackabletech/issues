@@ -7,6 +7,11 @@ assignees: ''
 
 ---
 
+<!--
+    DO NOT REMOVE THIS COMMENT. It is intended for people who might copy/paste from the previous release issue.
+    This was created by an issue template: https://github.com/stackabletech/issues/issues/new/choose.
+-->
+
 # Stackable Release XX.(X)X
 
 ## Release checklists
