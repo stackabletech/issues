@@ -51,6 +51,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Create release tag(s) for operators (see stackable-utils for scripts to create tags)
 - [ ] Create release tag for stackable-cockpit (optional, highly experimental, requires manual tag creation)
 - [ ] Update changelogs in main branches (see stackable-utils for script to do this)
+- [ ] Generate CRD docs [website](https://crds.stackable.tech/) for the new release by following these [instructions](https://github.com/stackabletech/crddocs)
 - [ ] Check (selected) integration tests
 - [ ] Check getting started scripts (use a table in Nuclino)
 - [ ] Run/check getting-started scripts
@@ -99,7 +100,6 @@ Marketing tasks can now reference published documentation.
 ```[tasklist]
 ### Post-release tasks
 - [ ] Bump Rust version. This can be done [in this file](https://github.com/stackabletech/operator-templating/blob/main/config/rust.yaml) by changing `rust_version` and also for the ubi base image [here](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile#L25). Please be aware that this action will change it for all repositories at the same time (when merging the templating PRs).
-- [ ] ~~Run renovate manually by starting this action: https://github.com/stackabletech/ci/blob/main/.github/workflows/renovate.yml~~ (Doesn't work. Renovate is not automatable)
 - [ ] Check/bump versions of kube-rs and k8s-openapi (also checking the version of k8s we build against)
 - [ ] Check/bump ubi8 base image
 - [ ] preflight now checks automatically it's own version and only runs if latest ~~Check/bump preflight~~
