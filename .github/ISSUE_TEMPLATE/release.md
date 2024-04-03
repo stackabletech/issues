@@ -2,7 +2,7 @@
 name: Release
 about: This template can be used to track the release process at Stackable
 title: Release XX.(X)X
-labels: ''
+labels: ['epic']
 assignees: ''
 
 ---
