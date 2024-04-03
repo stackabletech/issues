@@ -2,12 +2,21 @@
 name: Release
 about: This template can be used to track the release process at Stackable
 title: Release XX.(X)X
-labels: ''
+labels: ['epic']
 assignees: ''
 
 ---
 
+<!--
+    DO NOT REMOVE THIS COMMENT. It is intended for people who might copy/paste from the previous release issue.
+    This was created by an issue template: https://github.com/stackabletech/issues/issues/new/choose.
+-->
+
 # Stackable Release XX.(X)X
+
+> [!IMPORTANT]
+> Important dates:
+> - 
 
 ## Release checklists
 
@@ -17,9 +26,10 @@ assignees: ''
 - [ ] Check Rust and e.g. cargo deps versions
 - [ ] Run/check getting-started scripts
 - [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes
+- [ ] Update demo docs and screenshots
 - [ ] Ensure integration tests are successful on OpenShift
-- [ ] Test SDP release upgrade against 2-3 demos (i.e. install release, run demo, bump release, check what needs to be patched)
-- [ ] TODO: get rid of this ? Update the getting-started page in the main docs and check it works with this release: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting_started.adoc
+- [ ] Test SDP release upgrade against several demos (i.e. install release, run demo, bump release, check what needs to be patched)
+- [ ] Run all of the test suites
 ```
 
 ```[tasklist]
@@ -42,12 +52,14 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Create release tag for stackable-cockpit (optional, highly experimental, requires manual tag creation)
 - [ ] Update changelogs in main branches (see stackable-utils for script to do this)
 - [ ] Generate CRD docs [website](https://crds.stackable.tech/) for the new release by following these [instructions](https://github.com/stackabletech/crddocs)
-- [ ] Check (selected) integration tests (use a table in Nuclino - easier for concurrent editing)
+- [ ] Check (selected) integration tests
 - [ ] Check getting started scripts (use a table in Nuclino)
-- [ ] Check (new) stackablectl Stacks and Demos (use a table in Nuclino)
+- [ ] Run/check getting-started scripts
+- [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes
 - [ ] Test with locally updated (to new release number) `releases.yaml`
 - [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
 - [ ] Check that an upgrade can be performed on an existing cluster without data loss.
+- [ ] Run all of the test suites
 ```
 
 ```[tasklist]
@@ -61,17 +73,17 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Upgrade guide: List supported k8s versions
 - [ ] Update version of main documentation repo
 - [ ] Set the release to "Released" in the Feature Tracker and create a new release
+- [ ] Update the getting-started page in the main docs and check it works with this release: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting_started.adoc
 ```
 
 Marketing tasks can now reference published documentation.
 
 ```[tasklist]
 #### Marketing tasks
-- [ ] Ping the stackable-ionos-tech channel or anyone responsible once all tags are created
 - [ ] Write marketing / customer oriented release summary to be published in the marketing channels
 - [ ] Update the homepage banner (as long as we have it) to point to the new release
 - [ ] Write a blogpost / news article announcing the new release (optional)
-- [ ] Write a description of new demos for hmepage/demos section
+- [ ] Write a description of new demos for homepage/demos section
 - [ ] Announce Release on LinkedIn
 - [ ] Announce Release in Newsletter (optional)
 - [ ] Produce a release highlight video (optional)
@@ -82,14 +94,15 @@ Marketing tasks can now reference published documentation.
 - [ ] Post an announcement via OSBA (Ping Lars)
 - [ ] Send announcement to Kubernetes Podcast (Ping Lars)
 - [ ] Send announcement to Heiser
+- [ ] Ping the stackable-ionos-tech channel or anyone responsible once all tags are created
 ```
 
 ```[tasklist]
 ### Post-release tasks
 - [ ] Bump Rust version. This can be done [in this file](https://github.com/stackabletech/operator-templating/blob/main/config/rust.yaml) by changing `rust_version` and also for the ubi base image [here](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile#L25). Please be aware that this action will change it for all repositories at the same time (when merging the templating PRs).
-- [ ] Run renovate manually by starting this action: https://github.com/stackabletech/ci/blob/main/.github/workflows/renovate.yml
 - [ ] Check/bump versions of kube-rs and k8s-openapi (also checking the version of k8s we build against)
 - [ ] Check/bump ubi8 base image
+- [ ] preflight now checks automatically it's own version and only runs if latest ~~Check/bump preflight~~
 - [ ] Openshift certification
 - [ ] Define product versions to include in the next release
 - [ ] Add branch protection to release branches once they are stable
