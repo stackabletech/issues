@@ -106,4 +106,5 @@ Marketing tasks can now reference published documentation.
 - [ ] Openshift certification
 - [ ] Define product versions to include in the next release
 - [ ] Add branch protection to release branches once they are stable
+- [ ] Mark any older releases that are now end-of-life as such in the documentation (Ping Felix)
 ```
