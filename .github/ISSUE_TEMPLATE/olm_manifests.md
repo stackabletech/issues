@@ -34,7 +34,7 @@ This issue assumes you are generating OLM manifests for a released SDP version w
 - [ ] All container images have been published to quay.io
 
 
-## Secret operator
+## Secret and listener operator
 
 ### Generate manifests
 
@@ -55,7 +55,8 @@ Options:
 * `-c $HOME/repo/stackable/openshift-certified-operators` the location of the openshift operator repository
 * `-o $HOME/repo/stackable/secret-operator` the location of the secret op
 
-- [ ] Copy the cluster service version file from the previous package version.
+- [ ] Copy the cluster service version file from the previous  version.
+- [ ] Copy the operator manifests file fro the previous version. For [secret](https://github.com/stackabletech/openshift-certified-operators/blob/main/operators/stackable-secret-operator/23.11.0/manifests/secret-operator-manifests.yaml) and [listener](https://github.com/stackabletech/openshift-certified-operators/blob/main/operators/stackable-listener-operator/23.11.0/manifests/listener-operator-manifests.yaml)
 - [ ] Replace the contents of the deployment, and cluster role with the `template.spec` and `rules` from the newly generated files.
 - [ ] Remove the unused generated files : service account, operator cluster role (not the product cluster role), role binding, deployment.
 - [ ] Remove all Helm labels in all remaining files (including all labels from the cluster role).
@@ -75,11 +76,6 @@ Options:
 * `-o secret` name of the operator to install
 * `-c ~/repo/stackable/openshift-certified-operators` location of the openshift operator repository
 * `-d` deploy to the cluster
-
-  
-## Listener operator
-
-    build-manifests.sh
 
 ## All other operators
 
@@ -123,19 +119,24 @@ We use `--skip-release` because the operator has already been installed previous
 
 ```[tasklist]
 # Operators
-- [ ] airflow-operator
+
+Please follow this list in order at least until the zookeeper-operator before parallelizing.
 - [ ] commons-operator
+- [ ] secret-operator
+- [ ] listener-operator
+- [ ] zookeeper-operator
+- [ ] hdfs-operator
+- [ ] hive-operator
+- [ ] hbase-operator
+- [ ] opa-operator
 - [ ] druid-operator
 - [ ] hbase-operator
-- [ ] hdfs-operator
-- [ ] hello-world-operator
-- [ ] hive-operator
 - [ ] kafka-operator
 - [ ] nifi-operator
-- [ ] opa-operator
 - [ ] spark-k8s-operator
 - [ ] superset-operator
+- [ ] airflow-operator
 - [ ] trino-operator
-- [ ] zookeeper-operator
+- [ ] hello-world-operator
 ```
 
