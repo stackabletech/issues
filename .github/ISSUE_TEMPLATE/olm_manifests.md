@@ -35,6 +35,9 @@ This issue assumes you are generating OLM manifests for a released SDP version w
 
 ## Secret operator
 
+### Generate manifests
+
+- [ ] Update the supported OpenShift version range in the function [generate_metadata()](https://github.com/stackabletech/stackable-utils/blob/273ec983d6c0b1ea1852d9633ed56b8123054b39/olm/build-manifests.sh#L39) 
 - [ ] Create release branch (from `main`) in the openshift operator repository
 
       cd $HOME/repo/stackable/openshift-certified-operators
@@ -42,13 +45,37 @@ This issue assumes you are generating OLM manifests for a released SDP version w
       
 - [ ] Generate manifests
       
-    ./olm/build-manifests.sh -r 24.3.0 -c $HOME/repo/stackable/openshift-certified-operators -o $HOME/repo/stackable/secret-operator
+      ./olm/build-manifests.sh -r 24.3.0 \
+      -c $HOME/repo/stackable/openshift-certified-operators \
+      -o $HOME/repo/stackable/secret-operator
 
 Options:
 * `-r 24.3.0` is the SDP release
 * `-c $HOME/repo/stackable/openshift-certified-operators` the location of the openshift operator repository
 * `-o $HOME/repo/stackable/secret-operator` the location of the secret op
 
+- [ ] Copy the cluster service version file from the previous package version.
+- [ ] Replace the contents of the deployment, and cluster role with the `template.spec` and `rules` from the newly generated files.
+- [ ] Remove the unused generated files : service account, operator cluster role (not the product cluster role), role binding, deployment.
+- [ ] Remove all Helm labels in all remaining files (including all labels from the cluster role).
+- [ ] Check or update the metadata/dependencies.yaml
+- [ ] Update image tags and hashes with quay.io versions
+- [ ] Commit & push your changes
+
+### Install manifests
+
+- [ ] Ensure your K8S configuration points to a an OpenShift (or OKD) instance
+- [ ] Install the operator from the manifests generated in the previous step
+
+      /olm/build-bundles.sh -r 24.3.0 -o secret -c ~/repo/stackable/openshift-certified-operators -d
+
+Options:
+* `-r 24.3.0` version of the operator to install
+* `-o secret` name of the operator to install
+* `-c ~/repo/stackable/openshift-certified-operators` location of the openshift operator repository
+* `-d` deploy to the cluster
+
+  
 ## Listener operator
 
     build-manifests.sh
