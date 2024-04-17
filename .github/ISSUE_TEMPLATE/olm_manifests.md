@@ -6,6 +6,7 @@ labels: ''
 assignees: ''
 
 ---
+# Description
 
 This is a list of steps you can follow to generate, install and test Operator Lifecycle Management (OLM) manifests for the Stackable Data Platform.
 
@@ -82,14 +83,59 @@ Options:
 
 ## All other operators
 
-    ./olm/build-manifests.py --openshift-versions 'v4.11-v4.15' --release 24.3.0 --repo-operator ~/repo/stackable/commons-operator
+These operators shouldn't require any manual editing of the manifests but a visual check is recommended.
 
-    ./olm/build-bundles.sh -r 24.3.0 -o commons -c ~/repo/stackable/openshift-certified-operators -d
+The steps are illustrated only once for the ZooKeeper operator but a list of all operators to work on is added below.
 
-This is a simple checklist of things to bear in mind when creating a new issue.
+### Generate manifests
 
-- [ ] Generate the manifests
-- [ ] Manually do a check of the CSV file, etc.
-- [ ] Install the operator
-- [ ] Test the operator
-- [ ] ...
+- [ ] Create release branch (from `main`) in the openshift operator repository
+
+      cd $HOME/repo/stackable/openshift-certified-operators
+      git switch -c stackable-zookeeper-24.3.0
+
+- [ ] Ensure appropriate branch (`release-24.3`) is checkout out in the ZooKeeper operator
+- [ ] Generate manifests
+
+      ./olm/build-manifests.py \
+      --openshift-versions 'v4.11-v4.15' \
+      --release 24.3.0 \
+      --repo-operator ~/repo/stackable/zookeeper-operator
+
+See `./olm/build-manifests.py --help` for possible options.
+
+### Install manifests
+
+    ./olm/build-bundles.sh \
+    -r 24.3.0 \
+    -o zookeeper \
+    -c ~/repo/stackable/openshift-certified-operators \
+    -d
+
+### Test the operator
+
+Run the openshit integration test suite for the operator
+
+     cd ~/repo/stackable/zookeeper-operator
+     /scripts/run-tests --test-suite openshift --skip-release
+
+We use `--skip-release` because the operator has already been installed previously.
+
+```[tasklist]
+# Operators
+- [ ] airflow-operator
+- [ ] commons-operator
+- [ ] druid-operator
+- [ ] hbase-operator
+- [ ] hdfs-operator
+- [ ] hello-world-operator
+- [ ] hive-operator
+- [ ] kafka-operator
+- [ ] nifi-operator
+- [ ] opa-operator
+- [ ] spark-k8s-operator
+- [ ] superset-operator
+- [ ] trino-operator
+- [ ] zookeeper-operator
+```
+
