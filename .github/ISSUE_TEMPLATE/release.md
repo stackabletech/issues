@@ -103,7 +103,7 @@ Marketing tasks can now reference published documentation.
 - [ ] Check/bump versions of kube-rs and k8s-openapi (also checking the version of k8s we build against)
 - [ ] Check/bump ubi8 base image
 - [ ] preflight now checks automatically it's own version and only runs if latest ~~Check/bump preflight~~
-- [ ] Openshift certification
+- [ ] Openshift certification. Create an issue from this [template](https://github.com/stackabletech/issues/blob/main/.github/ISSUE_TEMPLATE/olm_manifests.md) for the OLM manifests
 - [ ] Define product versions to include in the next release
 - [ ] Add branch protection to release branches once they are stable
 - [ ] Mark any older releases that are now end-of-life as such in the documentation (Ping Felix)
