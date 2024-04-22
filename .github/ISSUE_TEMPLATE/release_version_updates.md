@@ -25,6 +25,7 @@ We want to bump old and new product versions with the latest ubi image releases.
 - [ ] Update UBI version
 - [ ] Update Cargo CycloneDX and Cargo Auditable
 - [ ] Update Rust Toolchain version
+- [ ] Update `protoc` version
 ```
 
 #### Java Base
