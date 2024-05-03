@@ -17,7 +17,7 @@ assignees: ''
 ## Description
     
 <!--
-- Briefly describe what this epic aims to achieve
+- Briefly describe what this issue aims to achieve
 - "What" are we trying to achieve
 
 Examples:
@@ -50,14 +50,14 @@ Examples:
 ## Tasks
 
 <!--
-- List all known tasks that need to be completed to finish this epic
+- List all known tasks that need to be completed to finish this issue
     - Not all tasks might be known at the beginning!
     - Task types
         - Technical
         - Testing
         - Documentation
         - Marketing / Showcase
-- Initial tasks might just be _separate_ research tasks, which, upon completion, lead to more tasks in this epic
+- Initial tasks might just be _separate_ research tasks, which, upon completion, lead to more tasks in this task/epic
 - When creating the list of tasks make sure to put them in an order and focus on creating minimum marketable features
 - This is the _Definition of Done_ which (mostly, exception are marketing tasks) represents the technical "completeness" of a task 
 
@@ -109,7 +109,7 @@ Example:
 ## Quality
           
 <!--
-- Outline how this epic will be tested
+- Outline how this issue will be tested
 - Compatibility:
   - Try to ensure compatibility with all our supported versions (e.g. Kubernetes, OpenShift, product versions)
   - List any potential compatibility issues you're aware of
@@ -120,8 +120,8 @@ Example:
                      
 <!--
 - Write a short sentence or abstract that can go into the release notes
-- This way it is also documented for anyone finding _just this_ epic later
-- This does not need to be filled out during refinement but can/should be added later before closing the epic
+- This way it is also documented for anyone finding _just this_ issue later
+- This does not need to be filled out during refinement but can/should be added later before closing the issue
 -->
 
 <!--
@@ -134,7 +134,7 @@ NOTE: This section is not meant to be displayed, therefore it is in a comment. Y
 - [ ] Add appropriate labels
 
 
-- There are different types of epics, which might require different subsets (or no) sections of the above
+- There are different types of issues/epics, which might require different subsets (or no) sections of the above
     - e.g. "Update product versions"
     - e.g. "Implement new feature"
 - In the whole issue write out all acronyms that are not industry standard at least once. Example: OpenPolicyAgent (OPA)
