@@ -29,7 +29,7 @@ assignees: ''
 - [ ] Update demo docs and screenshots
 - [ ] Ensure integration tests are successful on OpenShift
 - [ ] Test SDP release upgrade against several demos (i.e. install release, run demo, bump release, check what needs to be patched)
-- [ ] Run all of the test suites
+- [ ] Run all of the test suites (with all product versions, not just "nightly")
 ```
 
 ```[tasklist]
