@@ -13,13 +13,26 @@ The single source of truth for this data is a [spreadsheet](https://docs.google.
 
 ## Acceptance 
 
-We want to bump old and new product versions with the latest ubi image releases. This means bumping the stackable version and rerunning the build actions. This includes our [Java base image](https://github.com/stackabletech/docker-images/tree/main/java-base) which should be done before updating any Java based products.
+We want to bump old and new product versions with the latest ubi image releases.
+This includes our [Java base image](https://github.com/stackabletech/docker-images/tree/main/java-base) which should be done before updating any Java based products.
+It also includes bumping to the latest supported JVM version.
 
 ### Base images
 
 #### UBI8 Rust Builder
 
 [ubi8-rust-builder](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile)
+
+```[tasklist]
+- [ ] Update UBI version
+- [ ] Update Cargo CycloneDX and Cargo Auditable
+- [ ] Update Rust Toolchain version
+- [ ] Update `protoc` version
+```
+
+#### UBI9 Rust Builder
+
+[ubi9-rust-builder](https://github.com/stackabletech/docker-images/blob/main/ubi9-rust-builder/Dockerfile)
 
 ```[tasklist]
 - [ ] Update UBI version
@@ -38,22 +51,20 @@ Nothing currently needs to be updated here
 
 ```[tasklist]
 - [ ] Update UBI version
+- [ ] Update Cargo CycloneDX and Cargo Auditable
+- [ ] Update Rust Toolchain version
+- [ ] Update `protoc` version
+- [ ] Update config-utils version
 ```
 
 ### Product Images
 
-- `New` versions need to be added to `conf.py` and added to the documentation page for the operator
-- `Deprecated` need to be updated in the documentation
-- `Removed` need to be updated in `conf.py` and removed from the documentation page
 - Make sure to _also_ check any other dependencies we might use in a Docker image! (e.g. git sync, prometheus exporter etc.)
-
 
 #### Airflow
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
 - [ ] Documentation is updated
 - [ ] Operator is updated
 ```
@@ -61,9 +72,8 @@ Nothing currently needs to be updated here
 #### Druid
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
+- [ ] JVM is at latest supported version
 - [ ] Documentation is updated
 - [ ] Operator is updated
 - [ ] Update the [druid-opa-authorizer](https://github.com/stackabletech/druid-opa-authorizer/) with the new set of versions
@@ -74,9 +84,8 @@ Nothing currently needs to be updated here
 NOTE: Make sure to also consider Omid & Phoenix
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
+- [ ] JVM is at latest supported version
 - [ ] Documentation is updated
 - [ ] Operator is updated
 ```
@@ -84,9 +93,8 @@ NOTE: Make sure to also consider Omid & Phoenix
 #### HDFS
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
+- [ ] JVM is at latest supported version
 - [ ] Documentation is updated
 - [ ] Operator is updated
 - [ ] Update Authorizer, Group Mapper and Rack Awareness stuff if needed
@@ -95,9 +103,8 @@ NOTE: Make sure to also consider Omid & Phoenix
 #### Hive
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
+- [ ] JVM is at latest supported version
 - [ ] Documentation is updated
 - [ ] Operator is updated
 ```
@@ -105,9 +112,8 @@ NOTE: Make sure to also consider Omid & Phoenix
 #### Kafka
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
+- [ ] JVM is at latest supported version
 - [ ] Documentation is updated
 - [ ] Operator is updated
 ```
@@ -115,9 +121,8 @@ NOTE: Make sure to also consider Omid & Phoenix
 #### NiFi
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
+- [ ] JVM is at latest supported version
 - [ ] Documentation is updated
 - [ ] Operator is updated
 ```
@@ -125,9 +130,7 @@ NOTE: Make sure to also consider Omid & Phoenix
 #### OpenPolicyAgent (OPA)
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
 - [ ] Documentation is updated
 - [ ] Operator is updated
 ```
@@ -135,9 +138,8 @@ NOTE: Make sure to also consider Omid & Phoenix
 #### Spark
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
+- [ ] JVM is at latest supported version
 - [ ] Documentation is updated
 - [ ] Operator is updated
 ```
@@ -145,9 +147,7 @@ NOTE: Make sure to also consider Omid & Phoenix
 #### Superset
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
 - [ ] Documentation is updated
 - [ ] Operator is updated
 ```
@@ -155,9 +155,7 @@ NOTE: Make sure to also consider Omid & Phoenix
 #### Trino
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
 - [ ] Documentation is updated
 - [ ] Operator is updated
 ```
@@ -165,9 +163,8 @@ NOTE: Make sure to also consider Omid & Phoenix
 #### ZooKeeper
 
 ```[tasklist]
-- [ ] New:
-- [ ] Deprecated: 
-- [ ] Removed:
+- [ ] Versions are updated in accordinance to the source of truth spreadsheet
+- [ ] JVM is at latest supported version
 - [ ] Documentation is updated
 - [ ] Operator is updated
 ```
