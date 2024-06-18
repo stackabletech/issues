@@ -99,6 +99,7 @@ Marketing tasks can now reference published documentation.
 
 ```[tasklist]
 ### Post-release tasks
+- [ ] Update the list of supported SDP releases in Jira (ping Jim)
 - [ ] Bump Rust version. This can be done [in this file](https://github.com/stackabletech/operator-templating/blob/main/config/rust.yaml) by changing `rust_version` and also for the ubi base image [here](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile#L25). Please be aware that this action will change it for all repositories at the same time (when merging the templating PRs).
 - [ ] Check/bump versions of kube-rs and k8s-openapi (also checking the version of k8s we build against)
 - [ ] Check/bump ubi9 base image
