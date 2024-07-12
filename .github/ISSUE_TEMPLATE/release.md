@@ -16,20 +16,26 @@ assignees: ''
 
 > [!IMPORTANT]
 > Important dates:
-> - 
+> - ... - Release planning
+> - ... - Target release date
 
 ## Release checklists
 
 ```[tasklist]
 ### General pre-requisites (before feature freeze)
-- [ ] Bump operator-rs to latest version in all operators. This should be done early in the release cycle to leave sufficient time for testing etc.
-- [ ] Check Rust and e.g. cargo deps versions
+- [ ] **Week 1 tasks**
+- [ ] Update docker-images product versions (and ubiX-rust-builder toolchain)
+- [ ] Update operator-rs dependencies, rust-toolchain
+- [ ] Release operator-rs (use the helper scripts)
+- [ ] Update operator-templating (rust-toolchain)
+- [ ] Apply operator-templating to all operators (fix anything broken in the same PR)
+- [ ] Update operator dependencies. This should be done early in the release cycle to leave sufficient time for testing etc.
+- [ ] **Week 2 tasks**
 - [ ] Run/check getting-started scripts
-- [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes
-- [ ] Update demo docs and screenshots
+- [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes including updated screenshots
 - [ ] Ensure integration tests are successful on OpenShift
-- [ ] Test SDP release upgrade against several demos (i.e. install release, run demo, bump release, check what needs to be patched)
-- [ ] Run all of the test suites (with all product versions, not just "nightly")
+- [ ] Test SDP release upgrade against several demos (i.e. install current release, run demo, bump to dev release, check what needs to be patched)
+- [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
 ```
 
 ```[tasklist]
