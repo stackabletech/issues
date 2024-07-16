@@ -41,26 +41,26 @@ Replace the items in the task lists below with the applicable Pull Requests
     # go to the stackable-templating repository, then run:
     yq '.repositories[].name' config/repositories.yaml \
     | sort \
-    | xargs -I {} echo "- [ ] https://github.com/stackabletech/{}/compare/main..fix/getting-started-pre-$(date +%y.%-m)?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-$(date +%y.%-m)"
+    | xargs -I {} echo "- [ ] https://github.com/stackabletech/{}/compare/main..fix/getting-started-pre-$(date +%y.%-m)?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-$(date +%y.%-m)"
 -->
 
 ```[tasklist]
 ### Getting Started Script Checks and Updates
-- [ ] https://github.com/stackabletech/airflow-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/commons-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/druid-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/edc-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/hbase-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/hdfs-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/hello-world-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/hive-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/kafka-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/listener-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/nifi-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/opa-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/secret-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/spark-k8s-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/superset-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/trino-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
-- [ ] https://github.com/stackabletech/zookeeper-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix(docs)%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/airflow-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/commons-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/druid-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/edc-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/hbase-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/hdfs-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/hello-world-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/hive-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/kafka-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/listener-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/nifi-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/opa-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/secret-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/spark-k8s-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/superset-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/trino-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
+- [ ] https://github.com/stackabletech/zookeeper-operator/compare/main..fix/getting-started-pre-24.7?quick_pull=1&template=pre-release-getting-started-scripts.md&title=fix%28docs%29%3A+Update+getting-started+scripts+pre-24.7
 ```
