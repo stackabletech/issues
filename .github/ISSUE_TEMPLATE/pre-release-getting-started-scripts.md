@@ -20,7 +20,7 @@ assignees: ''
 
 Part of <https://github.com/stackabletech/issues/issues/TRACKING_ISSUE>
 
-Replace the items in the task lists below with the applicable Pull Requests
+Replace the items in the task lists below with the applicable Pull Requests (if any).
 
 > [!TIP]
 > Create branches with predictable names so the links below work. Remember
