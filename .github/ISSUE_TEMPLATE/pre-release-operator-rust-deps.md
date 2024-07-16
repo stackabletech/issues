@@ -45,26 +45,26 @@ Replace the items in the task lists below with the applicable Pull Requests
     # go to the stackable-templating repository, then run:
     yq '.repositories[].name' config/repositories.yaml \
     | sort \
-    | xargs -I {} echo "- [ ] https://github.com/stackabletech/{}/compare/main..chore/bump-rust-deps-pre-$(date +%y.%-m)?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-$(date +%y.%-m)"
+    | xargs -I {} echo "- [ ] https://github.com/stackabletech/{}/compare/main..chore/bump-rust-deps-pre-$(date +%y.%-m)?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-$(date +%y.%-m)"
 -->
 
 ```[tasklist]
 ### Operator Rust Updates
-- [ ] https://github.com/stackabletech/airflow-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/commons-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/druid-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/edc-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/hbase-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/hdfs-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/hello-world-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/hive-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/kafka-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/listener-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/nifi-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/opa-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/secret-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/spark-k8s-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/superset-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/trino-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
-- [ ] https://github.com/stackabletech/zookeeper-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/airflow-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/commons-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/druid-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/edc-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/hbase-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/hdfs-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/hello-world-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/hive-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/kafka-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/listener-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/nifi-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/opa-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/secret-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/spark-k8s-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/superset-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/trino-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
+- [ ] https://github.com/stackabletech/zookeeper-operator/compare/main..chore/bump-rust-deps-pre-24.7?quick_pull=1&template=pre-release-rust-deps.md&title=chore%3A+Bump+Rust+dependencies+pre-24.7
 ```
