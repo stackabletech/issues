@@ -1,7 +1,7 @@
 ---
-name: Release
-about: This template can be used to track the release process at Stackable
-title: Release XX.(X)X
+name: Release Tracking
+about: This template can be used to track the progress of the SDP
+title: "chore(tracking): Release SDP XX.(X)X"
 labels: ['epic']
 assignees: ''
 
@@ -21,22 +21,28 @@ assignees: ''
 
 ## Release checklists
 
+Replace the items in the task lists below with the applicable Pull Requests / Issues
+
+### General Pre-Requisites (before Feature Freeze)
+
 ```[tasklist]
-### General pre-requisites (before feature freeze)
-- [ ] **Week 1 tasks**
-- [ ] Update docker-images product versions (and ubiX-rust-builder toolchain)
-- [ ] Update operator-rs dependencies, rust-toolchain
-- [ ] Release operator-rs (use the helper scripts)
-- [ ] Update operator-templating (rust-toolchain)
-- [ ] Apply operator-templating to all operators (fix anything broken in the same PR)
-- [ ] Update operator dependencies. This should be done early in the release cycle to leave sufficient time for testing etc.
-- [ ] **Week 2 tasks**
+### Week 1
+- [ ] [Update and release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?assignees=&labels=epic&projects=&template=release-workspace-members.md&title=chore%3A+Update+and+release+workspace+members)
+- [ ] [Update Rust toolchain of operators](https://github.com/stackabletech/operator-templating/issues/new?assignees=&labels=epic&projects=&template=pre-release.md&title=chore%3A+Update+Rust+toolchain+to+1.XX)
+- [ ] [TODO: Update Rust dependencies of operators](https://github.com/stackabletech/issues)
+- [ ] [Update Container Images](https://github.com/stackabletech/docker-images/issues/new?assignees=&labels=epic&projects=&template=pre-release.md&title=chore%3A+Update+Container+Images+for+Stackable+Release+XX.%28X%29X)
+```
+
+```[tasklist]
+### Week 2
 - [ ] Run/check getting-started scripts
 - [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes including updated screenshots
 - [ ] Ensure integration tests are successful on OpenShift
 - [ ] Test SDP release upgrade against several demos (i.e. install current release, run demo, bump to dev release, check what needs to be patched)
 - [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
 ```
+
+### Other Pre-Requisites (before Feature Freeze)
 
 ```[tasklist]
 ### Other release-specific pre-requisites
