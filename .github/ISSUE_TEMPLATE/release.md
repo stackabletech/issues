@@ -1,7 +1,7 @@
 ---
-name: Release Tracking
-about: This template can be used to track the progress of the SDP
-title: "chore(tracking): Release SDP XX.(X)X"
+name: Release
+about: This template can be used to track the release process at Stackable
+title: Release XX.(X)X
 labels: ['epic']
 assignees: ''
 
@@ -20,13 +20,9 @@ assignees: ''
 
 ## Release checklists
 
-Replace the items in the task lists below with the applicable Pull Requests / Issues
-
 ```[tasklist]
 ### General pre-requisites (before feature freeze)
-- [ ] [Update and Release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?assignees=&labels=epic&projects=&template=release-workspace-members.md&title=chore%3A+Update+and+release+workspace+members)
-- [ ] [TODO: Update Rust toolchain](https://github.com/stackabletech/operator-templating)
-- [ ] [Update Container Images](https://github.com/stackabletech/docker-images/issues/new?assignees=&labels=epic&projects=&template=pre-release.md&title=chore%3A+Update+Container+Images+for+Stackable+Release+XX.%28X%29X)
+- [ ] Bump operator-rs to latest version in all operators. This should be done early in the release cycle to leave sufficient time for testing etc.
 - [ ] Check Rust and e.g. cargo deps versions
 - [ ] Run/check getting-started scripts
 - [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes
