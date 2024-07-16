@@ -29,7 +29,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 ### Week 1
 - [ ] [Update and release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?assignees=&labels=epic&projects=&template=release-workspace-members.md&title=chore%3A+Update+and+release+workspace+members)
 - [ ] [Update Rust toolchain of operators](https://github.com/stackabletech/operator-templating/issues/new?assignees=&labels=epic&projects=&template=pre-release.md&title=chore%3A+Update+Rust+toolchain+to+1.XX)
-- [ ] [TODO: Update Rust dependencies of operators](https://github.com/stackabletech/issues)
+- [ ] [Update Rust dependencies of operators](https://github.com/stackabletech/issues/issues/new?assignees=&labels=epic&projects=&template=pre-release.md&title=chore%28tracking%29%3A+Update+Rust+dependencies+of+operators+for+Stackable+release+XX.%28X%29X)
 - [ ] [Update Container Images](https://github.com/stackabletech/docker-images/issues/new?assignees=&labels=epic&projects=&template=pre-release.md&title=chore%3A+Update+Container+Images+for+Stackable+Release+XX.%28X%29X)
 ```
 
