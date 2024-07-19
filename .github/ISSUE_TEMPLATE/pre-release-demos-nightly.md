@@ -39,6 +39,17 @@ stackablectl demo install <DEMO_NAME>
 # Get a list of installed operators
 stackablectl operator installed
 
+# Sometimes it is necessary to upgrade Helm charts
+# First, add the Helm repositories
+helm repo add minio https://charts.min.io/
+helm repo add bitnami https://charts.bitnami.com/bitnami
+
+# Next, upgrade the charts, i.e.:
+helm upgrade minio minio/minio --version x.x.x
+helm upgrade postgresql-hive bitnami/postgresql --version x.x.x
+helm upgrade postgresql-hive-iceberg bitnami/postgresql --version x.x.x
+helm upgrade postgresql-superset bitnami/postgresql --version x.x.x
+
 # Uninstall operators
 stackablectl release uninstall <CURRENT_RELEASE>
 
