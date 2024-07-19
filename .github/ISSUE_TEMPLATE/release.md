@@ -35,7 +35,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 
 ```[tasklist]
 ### Week 2
-- [ ] Run/check getting-started scripts
+- [ ] [Check and update getting-started script](https://github.com/stackabletech/issues/issues/new?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen&template=pre-release-getting-started-scripts.md)
 - [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes including updated screenshots
 - [ ] Ensure integration tests are successful on OpenShift
 - [ ] Test SDP release upgrade against several demos (i.e. install current release, run demo, bump to dev release, check what needs to be patched)
