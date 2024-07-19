@@ -36,6 +36,9 @@ For each demo, run the following commands:
 # Install demo (stable)
 stackablectl demo install <DEMO_NAME>
 
+# Get a list of installed operators
+stackablectl operator installed
+
 # Uninstall operators
 stackablectl release uninstall <CURRENT_RELEASE>
 
@@ -44,7 +47,8 @@ stackablectl release uninstall <CURRENT_RELEASE>
 kubectl replace -f https://raw.githubusercontent.com/stackabletech/commons-operator/main/deploy/helm/commons-operator/crds/crds.yaml
 kubectl replace -f https://raw.githubusercontent.com/stackabletech/...-operator/main/deploy/helm/...-operator/crds/crds.yaml
 
-# Install nightly version of operators
+# Install nightly version of operators (use the list from the earlier step
+# before deleting the operators)
 stackablectl operator install commons ...
 
 # Optionally update the product versions in the CRDs, e.g.:
