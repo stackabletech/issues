@@ -1,6 +1,6 @@
 ---
-name: Pre-Release Demo Testing on Nightly
-about: This template can be used to track the testing of demos on nightly leading up to the next Stackable release
+name: Pre-Release Demo Upgrade Testing from Stable to Nightly
+about: This template can be used to track the uprade testing of demos from stable to nightly leading up to the next Stackable release
 title: "chore(tracking): Test demos on nightly versions"
 labels: ['epic']
 assignees: ''
@@ -22,9 +22,19 @@ Part of <https://github.com/stackabletech/issues/issues/TRACKING_ISSUE>
 
 For each demo, run the following commands:
 
+> [!NOTE]
+> Record any issues or anomalies during the process in a comment on this issue.
+> Eg:
+> ```
+> :green_circle: **airflow-scheduled-job**
+>
+> The CRD had been updated and I needed to change the following in the manifest:
+> ...
+> ```
+
 ```shell
-# Install demo
-stackablectl demo <DEMO_NAME>
+# Install demo (stable)
+stackablectl demo install <DEMO_NAME>
 
 # Uninstall operators
 stackablectl release uninstall <CURRENT_RELEASE>
@@ -32,12 +42,14 @@ stackablectl release uninstall <CURRENT_RELEASE>
 # Update CRDs to nightly version (on main)
 # Repeat this for every operator used by the demo
 kubectl replace -f https://raw.githubusercontent.com/stackabletech/commons-operator/main/deploy/helm/commons-operator/crds/crds.yaml
+kubectl replace -f https://raw.githubusercontent.com/stackabletech/...-operator/main/deploy/helm/...-operator/crds/crds.yaml
 
-# Install dev version of operators
+# Install nightly version of operators
 stackablectl operator install commons ...
 
 # Optionally update the product versions in the CRDs, e.g.:
-kubectl edit hbaseclusters/hbase
+kubectl patch hbaseclusters/hbase --type='json' -p='[{"op": "replace", "path": "/spec/image/productVersion", "value":"x.x.x"}]' # changed
+
 ```
 
 <!--
