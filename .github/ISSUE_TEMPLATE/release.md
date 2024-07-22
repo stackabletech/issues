@@ -27,16 +27,16 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 
 ```[tasklist]
 ### Week 1
-- [ ] [Update and release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?assignees=&labels=epic&projects=&template=release-workspace-members.md&title=chore%3A+Update+and+release+workspace+members)
-- [ ] [Update Rust toolchain of operators](https://github.com/stackabletech/operator-templating/issues/new?assignees=&labels=epic&projects=&template=pre-release.md&title=chore%3A+Update+Rust+toolchain+to+1.XX)
-- [ ] [Update Rust dependencies of operators](https://github.com/stackabletech/issues/issues/new?assignees=&labels=epic&projects=&template=pre-release.md&title=chore%28tracking%29%3A+Update+Rust+dependencies+of+operators+for+Stackable+release+XX.%28X%29X)
-- [ ] [Update Container Images](https://github.com/stackabletech/docker-images/issues/new?assignees=&labels=epic&projects=&template=pre-release.md&title=chore%3A+Update+Container+Images+for+Stackable+Release+XX.%28X%29X)
+- [ ] [Update and release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?template=release-workspace-members.md)
+- [ ] [Update Rust toolchain of operators](https://github.com/stackabletech/operator-templating/issues/new?template=pre-release.md)
+- [ ] [Update Rust dependencies of operators](https://github.com/stackabletech/issues/issues/new?template=pre-release-operator-rust-deps.md)
+- [ ] [Update Container Images](https://github.com/stackabletech/docker-images/issues/new?template=pre-release.md)
 ```
 
 ```[tasklist]
 ### Week 2
-- [ ] [Check and update getting-started script](https://github.com/stackabletech/issues/issues/new?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen&template=pre-release-getting-started-scripts.md)
-- [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes including updated screenshots
+- [ ] [Check and update getting-started script](https://github.com/stackabletech/issues/issues/new?template=pre-release-getting-started-scripts.md)
+- [ ] [Test and update demos stable to nightly](https://github.com/stackabletech/issues/issues/new?template=pre-release-demos-nightly.md)
 - [ ] Ensure integration tests are successful on OpenShift
 - [ ] Test SDP release upgrade against several demos (i.e. install current release, run demo, bump to dev release, check what needs to be patched)
 - [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
