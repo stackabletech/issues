@@ -1,6 +1,6 @@
 ---
 name: Pre-Release Demo Upgrade Testing from Stable to Nightly
-about: This template can be used to track the uprade testing of demos from stable to nightly leading up to the next Stackable release
+about: This template can be used to track the upgrade testing of demos from stable to nightly leading up to the next Stackable release
 title: "chore(tracking): Test demos on nightly versions"
 labels: ['epic']
 assignees: ''
@@ -37,7 +37,7 @@ For each demo, run the following commands:
 stackablectl demo install <DEMO_NAME>
 
 # Get a list of installed operators
-stackablectl operator installed
+stackablectl operator installed --output=plain
 
 # Sometimes it is necessary to upgrade Helm charts
 # First, add the Helm repositories
