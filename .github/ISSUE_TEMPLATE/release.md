@@ -45,6 +45,8 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 
 ```[tasklist]
 #### Technical tasks
+- [ ] Test stackable-utils scripts in dry-run mode (this can be done a week or so before the release)
+- [ ] Temporarily remove branch protection before pushing the release branches/tags
 - [ ] Create release branches for docker-images (see stackable-utils for script to create branches)
 - [ ] Create release tag(s) for docker-images (see stackable-utils for scripts to create tags)
 - [ ] Create release branches for operators (see stackable-utils for script to create branches)
