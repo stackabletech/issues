@@ -44,7 +44,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 
 ### Other Pre-Requisites (before Feature Freeze)
 
-Search for open issues scheduled for this release: <https://github.com/search?q=org%3Astackabletech+label%3Ascheduled-for%2F20XX-X&type=issues&state=open>
+Search for open issues labeleded with [`scheduled-for/20XX-X`](https://github.com/search?q=org%3Astackabletech+label%3Ascheduled-for%2F20XX-X&type=issues&state=open)
 
 ```[tasklist]
 ### Other release-specific pre-requisites
