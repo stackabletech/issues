@@ -75,7 +75,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Upgrade guide: List supported k8s versions
 - [ ] Update version of main documentation repo
 - [ ] Set the release to "Released" in the Feature Tracker and create a new release
-- [ ] Update the getting-started page in the main docs and check it works with this release: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting_started.adoc
+- [ ] Update the getting-started page in the main docs and check it works with this release: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting-started.adoc
 ```
 
 Marketing tasks can now reference published documentation.
