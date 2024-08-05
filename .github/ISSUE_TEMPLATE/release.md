@@ -1,7 +1,7 @@
 ---
-name: Release
-about: This template can be used to track the release process at Stackable
-title: Release XX.(X)X
+name: Release Tracking
+about: This template can be used to track the progress of the SDP
+title: "chore(tracking): Release SDP XX.(X)X"
 labels: ['epic']
 assignees: ''
 
@@ -16,21 +16,35 @@ assignees: ''
 
 > [!IMPORTANT]
 > Important dates:
-> - 
+> - ... - Release planning
+> - ... - Target release date
 
 ## Release checklists
 
+Replace the items in the task lists below with the applicable Pull Requests / Issues
+
+### General Pre-Requisites (before Feature Freeze)
+
 ```[tasklist]
-### General pre-requisites (before feature freeze)
-- [ ] Bump operator-rs to latest version in all operators. This should be done early in the release cycle to leave sufficient time for testing etc.
-- [ ] Check Rust and e.g. cargo deps versions
-- [ ] Run/check getting-started scripts
-- [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes
-- [ ] Update demo docs and screenshots
-- [ ] Ensure integration tests are successful on OpenShift
-- [ ] Test SDP release upgrade against several demos (i.e. install release, run demo, bump release, check what needs to be patched)
-- [ ] Run all of the test suites (with all product versions, not just "nightly")
+### Week 1
+- [ ] [Update and release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?template=release-workspace-members.md)
+- [ ] [Update Rust toolchain of operators](https://github.com/stackabletech/operator-templating/issues/new?template=pre-release.md)
+- [ ] [Update Rust dependencies of operators](https://github.com/stackabletech/issues/issues/new?template=pre-release-operator-rust-deps.md)
+- [ ] [Update Container Images](https://github.com/stackabletech/docker-images/issues/new?template=pre-release.md)
 ```
+
+```[tasklist]
+### Week 2
+- [ ] [Check and update getting-started script](https://github.com/stackabletech/issues/issues/new?template=pre-release-getting-started-scripts.md)
+- [ ] [Test and update demos stable to nightly](https://github.com/stackabletech/issues/issues/new?template=pre-release-demos-nightly.md)
+- [ ] Ensure integration tests are successful on OpenShift
+- [ ] Test SDP release upgrade against several demos (i.e. install current release, run demo, bump to dev release, check what needs to be patched)
+- [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
+```
+
+### Other Pre-Requisites (before Feature Freeze)
+
+Search for open issues labeleded with [`scheduled-for/20XX-X`](https://github.com/search?q=org%3Astackabletech+label%3Ascheduled-for%2F20XX-X&type=issues&state=open)
 
 ```[tasklist]
 ### Other release-specific pre-requisites
