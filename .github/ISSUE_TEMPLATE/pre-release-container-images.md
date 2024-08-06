@@ -13,9 +13,15 @@ The single source of truth for this data is a [spreadsheet](https://docs.google.
 
 ## Acceptance 
 
-We want to bump old and new product versions with the latest ubi image releases.
-This includes our [Java base image](https://github.com/stackabletech/docker-images/tree/main/java-base) which should be done before updating any Java based products.
-It also includes bumping to the latest supported JVM version.
+These high level tasks need to be completed.
+
+> [!IMPORTANT]
+> At the end, these should be checked based on the more granular criterea for each product/image below.
+
+- [ ] Bump UBI Image releases.
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Update product version references in getting_started docs, kuttl tests, and demos.
+- [ ] Update the Stackable DB.
 
 ### Base images
 
@@ -304,10 +310,4 @@ Used as a base for `java-base`.
 - [ ] _Link to operator PR (getting_started / kuttl)_
 - [ ] _Link to other operator PRs (getting_started / kuttl)_
 - [ ] _Link to demo PR (Do not merge until demos are released)_
-```
-
-### Misc
-
-```[tasklist]
-- [ ] Update the Stackable DB
 ```
