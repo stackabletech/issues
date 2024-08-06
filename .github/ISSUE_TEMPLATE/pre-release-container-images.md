@@ -57,6 +57,26 @@ It also includes bumping to the latest supported JVM version.
 - [ ] _Link to operator-templating PR_
 ```
 
+#### Vector
+
+> [!CAUTION]
+> Any additions to the versions need to be there before updating the `java-base`.
+
+Used as a base for `java-base`.
+
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
+
+```[tasklist]
+### Related Pull Requests
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
+```
+
 #### Java Base and Devel
 
 > [!CAUTION]
@@ -91,145 +111,199 @@ It also includes bumping to the latest supported JVM version.
 
 #### Airflow
 
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
+
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 #### Druid
 
-> [!IMPORTANT]
-> Bump the JVM to the latest supported version.
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
+- [ ] Update the [druid-opa-authorizer](https://github.com/stackabletech/druid-opa-authorizer/) with the new set of versions.
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
 
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
-- [ ] Update the [druid-opa-authorizer](https://github.com/stackabletech/druid-opa-authorizer/) with the new set of versions
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
+- [ ] _Link to [druid-opa-authorizer](https://github.com/stackabletech/druid-opa-authorizer/) PR_
 ```
 
 #### HBase, Phoenix, Omid
 
-> [!IMPORTANT]
-> Bump the JVM to the latest supported version.
->
-> Also consider Omid & Phoenix
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
+- [ ] Update Omid.
+- [ ] Update Phoenix.
 
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 #### HDFS
 
-> [!IMPORTANT]
-> Bump the JVM to the latest supported version.
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
+- [ ] Check Authorizer (unknown procedure)
+- [ ] Check Group Mapper (unknown procedure)
+- [ ] Check Rack Awareness (unknown procedure)
 
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
-- [ ] Update Authorizer (if needed)
-- [ ] Update Group Mapper (if needed)
-- [ ] Update Rack Awareness (if needed)
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 #### Hive
 
-> [!IMPORTANT]
-> Bump the JVM to the latest supported version.
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
 
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 #### Kafka
 
-> [!IMPORTANT]
-> Bump the JVM to the latest supported version
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
 
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 #### NiFi
 
-> [!IMPORTANT]
-> Bump the JVM to the latest supported version
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
 
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 #### OpenPolicyAgent (OPA)
 
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
+
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 #### Spark
 
-> [!IMPORTANT]
-> Bump the JVM to the latest supported version.
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
+- [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
 
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 #### Superset
 
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
+
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 #### Trino
 
-> [!IMPORTANT]
-> Bump the JVM to the latest supported version.
->
-> Also consider updating trino-cli in the same PR.
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
+- [ ] Update trino-cli.
 
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 #### ZooKeeper
 
-> [!IMPORTANT]
-> Bump the JVM to the latest supported version.
+**Acceptance criterea:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+- [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
+- [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
 
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
-- [ ] Update the versions used in the operator
-- [ ] Update the versions used in demos
+- [ ] _Link to PR_
+- [ ] _Link to operator PR (getting_started / kuttl)_
+- [ ] _Link to other operator PRs (getting_started / kuttl)_
+- [ ] _Link to demo PR (Do not merge until demos are released)_
 ```
 
 ### Misc
