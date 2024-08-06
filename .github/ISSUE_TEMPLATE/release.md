@@ -30,7 +30,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 - [ ] [Update and release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?template=release-workspace-members.md)
 - [ ] [Update Rust toolchain of operators](https://github.com/stackabletech/operator-templating/issues/new?template=pre-release.md)
 - [ ] [Update Rust dependencies of operators](https://github.com/stackabletech/issues/issues/new?template=pre-release-operator-rust-deps.md)
-- [ ] [Update Container Images](https://github.com/stackabletech/docker-images/issues/new?template=pre-release.md)
+- [ ] [Update Container Images](https://github.com/stackabletech/issues/issues/new?template=pre-release-container-images.md)
 ```
 
 ```[tasklist]
