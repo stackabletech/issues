@@ -19,6 +19,10 @@ It also includes bumping to the latest supported JVM version.
 
 ### Base images
 
+> [!TIP]
+> The Rust upgrades should be done as and when needed by developers, rather than being tied to the product selection for a release.
+> Also, ensure `make run-dev` works before bumping the Rust version across the operators. 
+
 #### UBI8 Rust Builder
 
 [ubi8-rust-builder](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile)
