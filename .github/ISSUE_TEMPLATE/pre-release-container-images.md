@@ -68,9 +68,9 @@ These high level tasks need to be completed.
 > [!CAUTION]
 > Any additions to the versions need to be there before updating the `java-base`.
 
-Used as a base for `java-base`.
+Used as a base for [java-base](https://github.com/stackabletech/docker-images/blob/main/java-base/Dockerfile).
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
@@ -88,9 +88,13 @@ Used as a base for `java-base`.
 > [!CAUTION]
 > Any additions to the `java-base` or `java-devel` versions need to be there before updating Java based products.
 
+**Actions to take:**
+
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
+
 ```[tasklist]
 ### Related Pull Requests
-- [ ] Does anything need doing here?
+- [ ] _Link to PR_
 ```
 
 #### Stackable Base
@@ -117,7 +121,7 @@ Used as a base for `java-base`.
 
 #### Airflow
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
@@ -132,7 +136,7 @@ Used as a base for `java-base`.
 
 #### Druid
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
@@ -150,7 +154,7 @@ Used as a base for `java-base`.
 
 #### HBase, Phoenix, Omid
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
@@ -168,7 +172,7 @@ Used as a base for `java-base`.
 
 #### HDFS
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
@@ -187,7 +191,7 @@ Used as a base for `java-base`.
 
 #### Hive
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
@@ -203,7 +207,7 @@ Used as a base for `java-base`.
 
 #### Kafka
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
@@ -219,7 +223,7 @@ Used as a base for `java-base`.
 
 #### NiFi
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
@@ -235,7 +239,7 @@ Used as a base for `java-base`.
 
 #### OpenPolicyAgent (OPA)
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
@@ -250,7 +254,7 @@ Used as a base for `java-base`.
 
 #### Spark
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
@@ -266,7 +270,7 @@ Used as a base for `java-base`.
 
 #### Superset
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Check other operators (getting_started / kuttl) for usage of the versions. Add the PR to the list below.
@@ -281,7 +285,7 @@ Used as a base for `java-base`.
 
 #### Trino
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
@@ -298,7 +302,7 @@ Used as a base for `java-base`.
 
 #### ZooKeeper
 
-**Acceptance criterea:**
+**Actions to take:**
 
 - [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet.
 - [ ] Update `versions.py` to the latest supported version of JVM (base and devel).
