@@ -23,38 +23,62 @@ It also includes bumping to the latest supported JVM version.
 
 [ubi8-rust-builder](https://github.com/stackabletech/docker-images/blob/main/ubi8-rust-builder/Dockerfile)
 
+- [ ] Update UBI version hash in the Dockerfile (`FROM`)
+- [ ] Update `RUST_DEFAULT_TOOLCHAIN_VERSION`
+- [ ] Update `CARGO_CYCLONEDX_CRATE_VERSION`
+- [ ] Update `CARGO_AUDITABLE_CRATE_VERSION`
+- [ ] Update `PROTOC_VERSION`
+
 ```[tasklist]
-- [ ] Update UBI version
-- [ ] Update Cargo CycloneDX and Cargo Auditable
-- [ ] Update Rust Toolchain version
-- [ ] Update `protoc` version
+### Related Pull Requests
+- [ ] _Link to PR here_
+- [ ] _Link to operator-rs PR_
+- [ ] _Link to operator-templating PR_
 ```
 
 #### UBI9 Rust Builder
 
 [ubi9-rust-builder](https://github.com/stackabletech/docker-images/blob/main/ubi9-rust-builder/Dockerfile)
 
+- [ ] Update UBI version hash in the Dockerfile (`FROM`)
+- [ ] Update `RUST_DEFAULT_TOOLCHAIN_VERSION`
+- [ ] Update `CARGO_CYCLONEDX_CRATE_VERSION`
+- [ ] Update `CARGO_AUDITABLE_CRATE_VERSION`
+- [ ] Update `PROTOC_VERSION`
+
 ```[tasklist]
-- [ ] Update UBI version
-- [ ] Update Cargo CycloneDX and Cargo Auditable
-- [ ] Update Rust Toolchain version
-- [ ] Update `protoc` version
+### Related Pull Requests
+- [ ] _Link to PR here_
+- [ ] _Link to operator-rs PR_
+- [ ] _Link to operator-templating PR_
 ```
 
-#### Java Base
+#### Java Base and Devel
 
-Nothing currently needs to be updated here
+> [!CAUTION]
+> Any additions to the `java-base` or `java-devel` versions need to be there before updating Java based products.
+
+```[tasklist]
+### Related Pull Requests
+- [ ] Does anything need doing here?
+```
 
 #### Stackable Base
 
 [stackable-base](https://github.com/stackabletech/docker-images/blob/main/stackable-base/Dockerfile)
 
+- [ ] Update UBI version hash in the Dockerfile (`FROM`)
+- [ ] Update `RUST_DEFAULT_TOOLCHAIN_VERSION`
+- [ ] Update `CARGO_CYCLONEDX_CRATE_VERSION`
+- [ ] Update `CARGO_AUDITABLE_CRATE_VERSION`
+- [ ] Update `PROTOC_VERSION`
+- [ ] Update `CONFIG_UTILS_VERSION`
+
 ```[tasklist]
-- [ ] Update UBI version
-- [ ] Update Cargo CycloneDX and Cargo Auditable
-- [ ] Update Rust Toolchain version
-- [ ] Update `protoc` version
-- [ ] Update config-utils version
+### Related Pull Requests
+- [ ] _Link to PR here_
+- [ ] _Link to operator-rs PR_
+- [ ] _Link to operator-templating PR_
 ```
 
 ### Product Images
@@ -64,109 +88,144 @@ Nothing currently needs to be updated here
 #### Airflow
 
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 ```
 
 #### Druid
 
+> [!IMPORTANT]
+> Bump the JVM to the latest supported version.
+
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] JVM is at latest supported version
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 - [ ] Update the [druid-opa-authorizer](https://github.com/stackabletech/druid-opa-authorizer/) with the new set of versions
 ```
 
 #### HBase, Phoenix, Omid
 
-NOTE: Make sure to also consider Omid & Phoenix
+> [!IMPORTANT]
+> Bump the JVM to the latest supported version.
+>
+> Also consider Omid & Phoenix
 
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] JVM is at latest supported version
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 ```
 
 #### HDFS
 
+> [!IMPORTANT]
+> Bump the JVM to the latest supported version.
+
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] JVM is at latest supported version
-- [ ] Documentation is updated
-- [ ] Operator is updated
-- [ ] Update Authorizer, Group Mapper and Rack Awareness stuff if needed
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
+- [ ] Update Authorizer (if needed)
+- [ ] Update Group Mapper (if needed)
+- [ ] Update Rack Awareness (if needed)
 ```
 
 #### Hive
 
+> [!IMPORTANT]
+> Bump the JVM to the latest supported version.
+
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] JVM is at latest supported version
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 ```
 
 #### Kafka
 
+> [!IMPORTANT]
+> Bump the JVM to the latest supported version
+
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] JVM is at latest supported version
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 ```
 
 #### NiFi
 
+> [!IMPORTANT]
+> Bump the JVM to the latest supported version
+
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] JVM is at latest supported version
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 ```
 
 #### OpenPolicyAgent (OPA)
 
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 ```
 
 #### Spark
 
+> [!IMPORTANT]
+> Bump the JVM to the latest supported version.
+
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] JVM is at latest supported version
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 ```
 
 #### Superset
 
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 ```
 
 #### Trino
 
+> [!IMPORTANT]
+> Bump the JVM to the latest supported version.
+>
+> Also consider updating trino-cli in the same PR.
+
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 ```
 
 #### ZooKeeper
 
+> [!IMPORTANT]
+> Bump the JVM to the latest supported version.
+
 ```[tasklist]
-- [ ] Versions are updated in accordinance to the source of truth spreadsheet
-- [ ] JVM is at latest supported version
-- [ ] Documentation is updated
-- [ ] Operator is updated
+### Related Pull Requests
+- [ ] Update `versions.py` to reflect the agreed upon versions in the spreadsheet
+- [ ] Update the versions used in the operator
+- [ ] Update the versions used in demos
 ```
 
 ### Misc
