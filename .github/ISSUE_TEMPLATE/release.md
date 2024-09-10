@@ -17,6 +17,7 @@ assignees: ''
 > [!IMPORTANT]
 > Important dates:
 > - ... - Release planning
+> - ... - Lock product versions
 > - ... - Target release date
 
 ## Release checklists
@@ -25,21 +26,27 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 
 ### General Pre-Requisites (before Feature Freeze)
 
+> [!TIP]
+> These tasks should be done earlier in the process to lessen the burden at Pre-release time.
+
 ```[tasklist]
-### Week 1
+### Early Pre-release tasks
 - [ ] [Update and release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?template=release-workspace-members.md)
 - [ ] [Update Rust toolchain of operators](https://github.com/stackabletech/operator-templating/issues/new?template=pre-release.md)
 - [ ] [Update Rust dependencies of operators](https://github.com/stackabletech/issues/issues/new?template=pre-release-operator-rust-deps.md)
 - [ ] [Update Container Images](https://github.com/stackabletech/docker-images/issues/new?template=pre-release.md)
 ```
 
+> [!TIP]
+> These tasks should be done a week or so before the release date.
+
 ```[tasklist]
-### Week 2
+### Pre-release
+- [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
 - [ ] [Check and update getting-started script](https://github.com/stackabletech/issues/issues/new?template=pre-release-getting-started-scripts.md)
 - [ ] [Test and update demos stable to nightly](https://github.com/stackabletech/issues/issues/new?template=pre-release-demos-nightly.md)
 - [ ] Ensure integration tests are successful on OpenShift
-- [ ] Test SDP release upgrade against several demos (i.e. install current release, run demo, bump to dev release, check what needs to be patched)
-- [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
+- [ ] Check stackable-utils scripts in dry-run mode work
 ```
 
 ### Other Pre-Requisites (before Feature Freeze)
@@ -59,20 +66,18 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 
 ```[tasklist]
 #### Technical tasks
-- [ ] Test stackable-utils scripts in dry-run mode (this can be done a week or so before the release)
 - [ ] Temporarily remove branch protection before pushing the release branches/tags
 - [ ] Create release branches for docker-images (see stackable-utils for script to create branches)
 - [ ] Create release tag(s) for docker-images (see stackable-utils for scripts to create tags)
 - [ ] Create release branches for operators (see stackable-utils for script to create branches)
 - [ ] Create release tag(s) for operators (see stackable-utils for scripts to create tags)
 - [ ] Create release tag for stackable-cockpit (optional, highly experimental, requires manual tag creation)
-- [ ] Update changelogs in main branches (see stackable-utils for script to do this)
+- [ ] Update release version in changelogs on main branches (see stackable-utils for script to do this)
 - [ ] Generate CRD docs [website](https://crds.stackable.tech/) for the new release by following these [instructions](https://github.com/stackabletech/crddocs)
-- [ ] Check (selected) integration tests
-- [ ] Check getting started scripts (use a table in Nuclino)
-- [ ] Run/check getting-started scripts
-- [ ] Run/check demos with dev release and main branch and create draft PR for release-related changes
-- [ ] Test with locally updated (to new release number) `releases.yaml`
+- [ ] Check (selected) integration tests on the new release branches
+- [ ] Run/Check getting started scripts, ensure image pulls for the release works
+- [ ] Run/Check demos with dev release and main branch and create draft PR for release-related changes
+- [ ] Test `stackablectl` with locally updated (to new release number) `releases.yaml`
 - [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
 - [ ] Check that an upgrade can be performed on an existing cluster without data loss.
 - [ ] Run all of the test suites
@@ -87,7 +92,8 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Upgrade guide: List dropped supported product versions (if there are some)
 - [ ] Upgrade guide: List dropped supported operators (if there are some)
 - [ ] Upgrade guide: List supported k8s versions
-- [ ] Update version of main documentation repo
+- [ ] Update version of main documentation repo (antora.yml on the release branch)
+- [ ] Update SDP release version in documentation/modules/ROOT/pages/getting-started.adoc
 - [ ] Set the release to "Released" in the Feature Tracker and create a new release
 - [ ] Update the getting-started page in the main docs and check it works with this release: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting-started.adoc
 ```
