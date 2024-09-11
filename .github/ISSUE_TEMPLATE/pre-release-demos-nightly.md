@@ -77,7 +77,7 @@ Replace the items in the task lists below with the applicable Pull Requests (if 
 These instructions are for deploying the nightly demo, as well as upgrading the operators and CRDS.
 
 ```shell
-# Install demo (stable)
+# Install demo (stable operators)
 stackablectl demo install <DEMO_NAME>
 
 # --- IMPORTANT ---
