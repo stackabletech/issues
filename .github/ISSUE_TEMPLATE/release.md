@@ -55,7 +55,7 @@ Search for open issues labeleded with [`scheduled-for/20XX-X`](https://github.co
 
 ```[tasklist]
 ### Other release-specific pre-requisites
-- [ ] ...
+- [ ] Run `niv update` and test via `make run-dev` (operator-templating)
 ```
 
 ### Feature freeze
