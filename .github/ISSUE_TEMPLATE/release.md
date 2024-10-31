@@ -86,6 +86,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 ```[tasklist]
 #### Documentation tasks
 - [ ] Check the Changelog and/or issue labels to compile Release Highlights
+- [ ] Compile list of new product versions that are supported and compile a list of new product features to include in the Release Highlights
 - [ ] Upgrade guide: Document how to use stackablectl to uninstall all and install new release
 - [ ] Upgrade guide: Document how to use helm to uninstall all and install new release
 - [ ] Upgrade guide: Every breaking change of all our operators
