@@ -44,6 +44,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 ### Pre-release
 - [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
 - [ ] [Check and update getting-started script](https://github.com/stackabletech/issues/issues/new?template=pre-release-getting-started-scripts.md)
+- [ ] [Check and update demo charts](https://github.com/stackabletech/demos/issues/new?template=pre-release-chart-updates.md)
 - [ ] [Test and update demos stable to nightly](https://github.com/stackabletech/demos/issues/new?template=pre-release-nightly-testing.md)
 - [ ] Ensure integration tests are successful on OpenShift
 - [ ] Check stackable-utils scripts in dry-run mode work
