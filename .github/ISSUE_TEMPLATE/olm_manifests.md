@@ -4,7 +4,32 @@ about: A task list for OLM manifest generation for certification
 title: 'OLM Manifests for release xxx'
 labels: ''
 assignees: ''
+---
 
+# Tracking
+
+This is for tracking distributed work. For instructions on how to proceed with each operator, see the description below.
+
+Please follow this list in order at least until the zookeeper-operator before parallelizing.
+
+---
+| Operator  | Maintainer     | Branch                            | Kuttl Tests        | Cert Pipeline          | Notes |
+| --------- | -------------- | --------------------------------- | ------------------ | ---------------------- | ----- |
+| commons   | your GH handle | branch name in the op cert repo   | :white_check_mark: | link to the PR upsteam |       |
+| secret    |                |                                   |                    |                        |       |
+| listener  |                |                                   |                    |                        |       |
+| zookeeper |                |                                   |                    |                        |       |
+| hdfs      |                |                                   |                    |                        |       |
+| hive      |                |                                   |                    |                        |       |
+| hbase     |                |                                   |                    |                        |       |
+| opa       |                |                                   |                    |                        |       |
+| druid     |                |                                   |                    |                        |       |
+| kafka     |                |                                   |                    |                        |       |
+| nifi      |                |                                   |                    |                        |       |
+| spark     |                |                                   |                    |                        |       |
+| superset  |                |                                   |                    |                        |       |
+| airflow   |                |                                   |                    |                        |       |
+| trino     |                |                                   |                    |                        |       |
 ---
 # Description
 
@@ -42,16 +67,16 @@ This issue assumes you are generating OLM manifests for a released SDP version w
 - [ ] Create release branch (from `main`) in the openshift operator repository
 
       cd $HOME/repo/stackable/openshift-certified-operators
-      git switch -c stackable-secret-24.3.0
+      git switch -c stackable-secret-24.11.0
       
 - [ ] Generate manifests
       
-      ./olm/build-manifests.sh -r 24.3.0 \
+      ./olm/build-manifests.sh -r 24.11.0 \
       -c $HOME/repo/stackable/openshift-certified-operators \
       -o $HOME/repo/stackable/secret-operator
 
 Options:
-* `-r 24.3.0` is the SDP release
+* `-r 24.11.0` is the SDP release
 * `-c $HOME/repo/stackable/openshift-certified-operators` the location of the openshift operator repository
 * `-o $HOME/repo/stackable/secret-operator` the location of the secret op
 
@@ -69,7 +94,7 @@ Options:
 - [ ] Ensure your K8S configuration points to a an OpenShift (or OKD) instance
 - [ ] Install the operator from the manifests generated in the previous step
 
-      /olm/build-bundles.sh -r 24.3.0 -o secret -c ~/repo/stackable/openshift-certified-operators -d
+      /olm/build-bundles.sh -r 24.11.0 -o secret -c ~/repo/stackable/openshift-certified-operators -d
 
 Options:
 * `-r 24.3.0` version of the operator to install
@@ -88,14 +113,17 @@ The steps are illustrated only once for the ZooKeeper operator but a list of all
 - [ ] Create release branch (from `main`) in the openshift operator repository
 
       cd $HOME/repo/stackable/openshift-certified-operators
-      git switch -c stackable-zookeeper-24.3.0
+      git switch -c stackable-zookeeper-24.11.0
 
-- [ ] Ensure appropriate branch (`release-24.3`) is checkout out in the ZooKeeper operator
+- [ ] Ensure appropriate branch (`release-24.11`) is checkout out in the ZooKeeper operator
 - [ ] Generate manifests
 
-      ./olm/build-manifests.py \
-      --openshift-versions 'v4.11-v4.15' \
-      --release 24.3.0 \
+      ./olm/build-manifests.py  \
+      --openshift-versions v4.14-v4.16 \
+      --repo-certified-operators ~/repo/stackable/openshift-certified-operators \
+      --channel 24.11 \
+      --release 24.11.0 \
+      --replaces 24.7.0 \
       --repo-operator ~/repo/stackable/zookeeper-operator
 
 See `./olm/build-manifests.py --help` for possible options.
@@ -103,7 +131,7 @@ See `./olm/build-manifests.py --help` for possible options.
 ### Install manifests
 
     ./olm/build-bundles.sh \
-    -r 24.3.0 \
+    -r 24.11.0 \
     -o zookeeper \
     -c ~/repo/stackable/openshift-certified-operators \
     -d
@@ -113,30 +141,8 @@ See `./olm/build-manifests.py --help` for possible options.
 Run the openshit integration test suite for the operator
 
      cd ~/repo/stackable/zookeeper-operator
-     /scripts/run-tests --test-suite openshift --skip-release
+     /scripts/run-tests --test-suite openshift --skip-operator zookeeper
 
-We use `--skip-release` because the operator has already been installed previously.
+We use `--skip-operator` because the operator has already been installed previously.
 
-```[tasklist]
-# Operators
-
-Please follow this list in order at least until the zookeeper-operator before parallelizing.
-- [ ] commons-operator
-- [ ] secret-operator
-- [ ] listener-operator
-- [ ] zookeeper-operator
-- [ ] hdfs-operator
-- [ ] hive-operator
-- [ ] hbase-operator
-- [ ] opa-operator
-- [ ] druid-operator
-- [ ] hbase-operator
-- [ ] kafka-operator
-- [ ] nifi-operator
-- [ ] spark-k8s-operator
-- [ ] superset-operator
-- [ ] airflow-operator
-- [ ] trino-operator
-- [ ] hello-world-operator
-```
 
