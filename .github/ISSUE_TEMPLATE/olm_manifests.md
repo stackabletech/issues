@@ -97,7 +97,7 @@ Options:
       /olm/build-bundles.sh -r 24.11.0 -o secret -c ~/repo/stackable/openshift-certified-operators -d
 
 Options:
-* `-r 24.3.0` version of the operator to install
+* `-r 24.11.0` version of the operator to install
 * `-o secret` name of the operator to install
 * `-c ~/repo/stackable/openshift-certified-operators` location of the openshift operator repository
 * `-d` deploy to the cluster
