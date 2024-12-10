@@ -88,17 +88,15 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] OpenShift testing on Rosa <!-- where is that at? -->
 ```
 
+> [!TIP]
+> Name the release-notes branch `docs/release-notes-XX.XX.X` so that the link below takes you directly to the [Pull Request template][docs-pr-template].
+
+[docs-pr-template]: https://github.com/stackabletech/documentation/blobs/main/.github/PULL_REQUEST_TEMPLATE/release-notes.md
+
 ```[tasklist]
 #### Documentation tasks
-- [ ] Check the Changelog and/or issue labels to compile Release Highlights
-- [ ] Compile list of new product versions that are supported and compile a list of new product features to include in the Release Highlights
-- [ ] Upgrade guide: Document how to use stackablectl to uninstall all and install new release
-- [ ] Upgrade guide: Document how to use helm to uninstall all and install new release
-- [ ] Upgrade guide: Every breaking change of all our operators
-- [ ] Upgrade guide: List dropped supported product versions (if there are some)
-- [ ] Upgrade guide: List dropped supported operators (if there are some)
-- [ ] Upgrade guide: List supported k8s versions
-- [ ] The team reviews the preview release notes: (structure, wording, xrefs and links, sentences on new lines)
+- [ ] Create a stackabletech/documentation branch called `docs/release-notes-XX.XX.X`
+- [ ] Begin writing the release notes with the [Pull Request template](https://github.com/stackabletech/documentation/compare/main...docs/release-notes-XX.XX.X?template=release-notes.md)
 - [ ] Update SDP release version in documentation/modules/ROOT/pages/getting-started.adoc and test the release install command
 - [ ] Cut a release branch (see [scripts/make-release-branch.sh](https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh))
 - [ ] Update releases in the playbook (see [scripts/publish-new-version.sh](https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh))
