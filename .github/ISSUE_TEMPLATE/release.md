@@ -47,7 +47,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 - [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
 - [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=pre-release-getting-started-scripts.md)
 - [ ] [Check and update demo charts](https://github.com/stackabletech/demos/issues/new?template=pre-release-chart-updates.md)
-- [ ] [Test and update demos stable to nightly](https://github.com/stackabletech/demos/issues/new?template=pre-release-nightly-testing.md)
+- [ ] [Test demos and upgrade from stable to nightly release](https://github.com/stackabletech/demos/issues/new?template=pre-release-upgrade-testing.md)
 - [ ] Ensure integration tests are successful on OpenShift
 - [ ] Check stackable-utils scripts in dry-run mode work
 ```
@@ -81,7 +81,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Test `stackablectl` with locally updated (to new release number) `releases.yaml`
 - [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
 - [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=release-getting-started-scripts.md)
-- [ ] [Test demos for the new release](https://github.com/stackabletech/demos/issues/new?template=release-testing.md)
+- [ ] [Test demos and upgrade from previous to this release](https://github.com/stackabletech/demos/issues/new?template=release-upgrade-testing.md)
 - [ ] Check that an upgrade can be performed on an existing cluster without data loss (cycling demo)
 - [ ] Run all integration tests (for both `x86_64` and `aarch64`)
 - [ ] OpenShift testing (discuss internally)
