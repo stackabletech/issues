@@ -42,7 +42,7 @@ popd
 
 > [!TIP]
 > Create branches with predictable names so the links below work. Remember
-> to replace `YY.M` and `YY.M.X` with the appropriate release version:
+> to replace `YY.M.X` with the appropriate release version:
 >
 > ```sh
 > git stash -m "unsaved work"
