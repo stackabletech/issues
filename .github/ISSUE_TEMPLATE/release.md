@@ -81,7 +81,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Test `stackablectl` with locally updated (to new release number) `releases.yaml`
 - [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
 - [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=release-getting-started-scripts.md)
-- [ ] [Test demos for the new release](https://github.com/stackabletech/demos/issues/new?template=TODO-release-testing.md)
+- [ ] [Test demos for the new release](https://github.com/stackabletech/demos/issues/new?template=release-testing.md)
 - [ ] Check that an upgrade can be performed on an existing cluster without data loss (cycling demo)
 - [ ] Run all integration tests (for both `x86_64` and `aarch64`)
 - [ ] OpenShift testing (discuss internally)
