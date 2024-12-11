@@ -84,7 +84,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] [Test demos for the new release](https://github.com/stackabletech/demos/issues/new?template=TODO-release-testing.md)
 - [ ] Check that an upgrade can be performed on an existing cluster without data loss (cycling demo)
 - [ ] Run all integration tests (for both `x86_64` and `aarch64`)
-- [ ] OpenShift testing on Rosa <!-- where is that at? -->
+- [ ] OpenShift testing (discuss internally)
 ```
 
 > [!TIP]
