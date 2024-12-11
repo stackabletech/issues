@@ -1,7 +1,7 @@
 ---
 name: Release Tracking
 about: This template can be used to track the progress of the SDP
-title: "chore(tracking): Release SDP YY.M.X"
+title: "chore(tracking): SDP Release YY.M.X"
 labels: ['epic']
 assignees: ''
 

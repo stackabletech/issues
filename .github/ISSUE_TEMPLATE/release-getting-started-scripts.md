@@ -1,7 +1,7 @@
 ---
 name: Getting Started Script Checks (Release)
 about: This template can be used to track the checks/updates of the "Getting Started" scripts in this repository for a new Stackable release
-title: "chore(tracking): Check and update getting-started scripts for YY.M.X"
+title: "chore(tracking): Check and update getting-started scripts for SDP Release YY.M.X"
 labels: ['epic']
 assignees: ''
 ---
