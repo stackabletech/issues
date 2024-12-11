@@ -1,7 +1,7 @@
 ---
 name: Release Tracking
 about: This template can be used to track the progress of the SDP
-title: "chore(tracking): Release SDP XX.(X)X"
+title: "chore(tracking): Release SDP YY.M.X"
 labels: ['epic']
 assignees: ''
 
@@ -12,7 +12,7 @@ assignees: ''
     This was created by an issue template: https://github.com/stackabletech/issues/issues/new/choose.
 -->
 
-# Stackable Release XX.(X)X
+# Stackable Release YY.M.X
 
 > [!IMPORTANT]
 > Important dates:
@@ -54,7 +54,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 
 ### Other Pre-Requisites (before Feature Freeze)
 
-Search for open issues labeleded with [`scheduled-for/20XX-X`](https://github.com/search?q=org%3Astackabletech+label%3Ascheduled-for%2F20XX-X&type=issues&state=open)
+Search for open issues labeleded with [`scheduled-for/YY.M.X`](https://github.com/search?q=org%3Astackabletech+label%3Ascheduled-for%2FYY.M.X&type=issues&state=open)
 
 ```[tasklist]
 ### Other release-specific pre-requisites
