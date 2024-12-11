@@ -45,7 +45,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 ```[tasklist]
 ### Pre-release
 - [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
-- [ ] [Check and update getting-started script](https://github.com/stackabletech/issues/issues/new?template=pre-release-getting-started-scripts.md)
+- [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=pre-release-getting-started-scripts.md)
 - [ ] [Check and update demo charts](https://github.com/stackabletech/demos/issues/new?template=pre-release-chart-updates.md)
 - [ ] [Test and update demos stable to nightly](https://github.com/stackabletech/demos/issues/new?template=pre-release-nightly-testing.md)
 - [ ] Ensure integration tests are successful on OpenShift
@@ -80,7 +80,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Generate CRD docs [website](https://crds.stackable.tech/) for the new release by following these [instructions](https://github.com/stackabletech/crddocs)
 - [ ] Test `stackablectl` with locally updated (to new release number) `releases.yaml`
 - [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
-- [ ] [Check and update getting-started script](https://github.com/stackabletech/issues/issues/new?template=TODO-getting-started-scripts.md)
+- [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=release-getting-started-scripts.md)
 - [ ] [Test demos for the new release](https://github.com/stackabletech/demos/issues/new?template=TODO-release-testing.md)
 - [ ] Check that an upgrade can be performed on an existing cluster without data loss (cycling demo)
 - [ ] Run all integration tests (for both `x86_64` and `aarch64`)
