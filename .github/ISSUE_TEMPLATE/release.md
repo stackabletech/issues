@@ -31,7 +31,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 
 ```[tasklist]
 ### Early Pre-release tasks
-- [ ] Create a "Post XX.XX release" retro issue (does this need a template? See https://github.com/stackabletech/issues/issues/669)
+- [ ] Create a "Post YY.M.X release" retro issue (does this need a template? See https://github.com/stackabletech/issues/issues/669)
 - [ ] Define product versions to include in the next release
 - [ ] [Update and release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?template=release-workspace-members.md)
 - [ ] [Update Rust toolchain of operators](https://github.com/stackabletech/operator-templating/issues/new?template=pre-release.md)
@@ -89,14 +89,14 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 ```
 
 > [!TIP]
-> Name the release-notes branch `docs/release-notes-XX.XX.X` so that the link below takes you directly to the [Pull Request template][docs-pr-template].
+> Name the release-notes branch `docs/release-notes-YY.M.X` so that the link below takes you directly to the [Pull Request template][docs-pr-template].
 
 [docs-pr-template]: https://github.com/stackabletech/documentation/blobs/main/.github/PULL_REQUEST_TEMPLATE/release-notes.md
 
 ```[tasklist]
 #### Documentation tasks
-- [ ] Create a stackabletech/documentation branch called `docs/release-notes-XX.XX.X`
-- [ ] Begin writing the release notes with the [Pull Request template](https://github.com/stackabletech/documentation/compare/main...docs/release-notes-XX.XX.X?template=release-notes.md)
+- [ ] Create a stackabletech/documentation branch called `docs/release-notes-YY.M.X`
+- [ ] Begin writing the release notes with the [Pull Request template](https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md)
 - [ ] Update SDP release version in documentation/modules/ROOT/pages/getting-started.adoc and test the release install command
 - [ ] Cut a release branch (see [scripts/make-release-branch.sh](https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh))
 - [ ] Update releases in the playbook (see [scripts/publish-new-version.sh](https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh))
@@ -131,6 +131,6 @@ Marketing tasks can now reference published documentation.
 - [ ] Update the list of supported SDP releases in Jira (ping Jim)
 - [ ] Openshift certification. Create an issue from this [template](https://github.com/stackabletech/issues/blob/main/.github/ISSUE_TEMPLATE/olm_manifests.md) for the OLM manifests
 - [ ] Mark any releases older than one year as "end-of-life" [in the documentation](https://github.com/stackabletech/documentation/blob/f751e7ff7cddacae7d2c6c2c6c1d1c877c7aa11c/antora.yml#L18) How? Ask Lars of course. He's good at that stuff.
-- [ ] Post XX.XX release retro (use issue created at the start of the process)
+- [ ] Post YY.M.X release retro (use issue created at the start of the process)
 - [ ] [Create the next release tracking task](https://github.com/stackabletech/issues/issues/new?template=release.md) (if the date is available)
 ```
