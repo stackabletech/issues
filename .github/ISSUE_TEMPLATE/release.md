@@ -90,12 +90,12 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 > [!TIP]
 > Name the release-notes branch `docs/release-notes-YY.M.X` so that the link below takes you directly to the [Pull Request template][docs-pr-template].
 
-[docs-pr-template]: https://github.com/stackabletech/documentation/blobs/main/.github/PULL_REQUEST_TEMPLATE/release-notes.md
+[docs-pr-template]: https://github.com/stackabletech/documentation/tree/main/.github/PULL_REQUEST_TEMPLATE/release-notes.md&title=chore(tracking):%20Release%20Notes%20for%20SDP%20YY.M.X
 
 ```[tasklist]
 #### Documentation tasks
 - [ ] Create a stackabletech/documentation branch called `docs/release-notes-YY.M.X`
-- [ ] Begin writing the release notes with the [Pull Request template](https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md)
+- [ ] Begin writing the release notes with the [Pull Request template](https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md&title=chore(tracking):%20Release%20Notes%20for%20SDP%20YY.M.X)
 - [ ] Update SDP release version in documentation/modules/ROOT/pages/getting-started.adoc and test the release install command
 - [ ] Cut a release branch (see [scripts/make-release-branch.sh](https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh))
 - [ ] Update releases in the playbook (see [scripts/publish-new-version.sh](https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh))
