@@ -1,7 +1,7 @@
 ---
 name: Pre-Release OpenShift Integration Tests
 about: This template can be used to track the integration testing on OpenShift leading up to the next Stackable release
-title: "chore(tracking): Run integration tests on OpenShift"
+title: "chore(tracking): Run integration tests on OpenShift before SDP Release YY.M.X"
 labels: ['epic']
 assignees: ''
 ---

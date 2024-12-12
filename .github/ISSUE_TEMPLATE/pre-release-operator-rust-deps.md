@@ -1,7 +1,7 @@
 ---
 name: Pre-Release Operator Rust Updates
 about: This template can be used to track the progress of Rust updates across our operators leading up to the Stackable release
-title: "chore(tracking): Update Rust dependencies of operators for Stackable release XX.(X)X"
+title: "chore(tracking): Update Rust dependencies of operators before SDP Release YY.M.X"
 labels: ['epic']
 assignees: ''
 ---
@@ -28,12 +28,12 @@ Replace the items in the task lists below with the applicable Pull Requests
 
 > [!TIP]
 > Create branches with predictable names so the links below work. Remember
-> to replace `xx.(x)x` with the appropriate release version:
+> to replace `YY.M.X` with the appropriate release version:
 >
 > ```sh
 > git stash -m "unsaved work"
 > git fetch origin
-> git checkout -b chore/bump-rust-deps-pre-xx.(x)x origin/main
+> git checkout -b chore/bump-rust-deps-pre-YY.M.X origin/main
 > ```
 >
 > Then use the links below to automatically create applicable PRs for each operator

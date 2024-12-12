@@ -1,7 +1,7 @@
 ---
 name: OLM Manifest Guide
 about: A task list for OLM manifest generation for certification
-title: 'OLM Manifests for release xxx'
+title: 'OLM Manifests for SDP Release YY.M.X'
 labels: ''
 assignees: ''
 ---
@@ -63,14 +63,14 @@ This issue assumes you are generating OLM manifests for a released SDP version w
 
 ### Generate manifests
 
-- [ ] Update the supported OpenShift version range in the function [generate_metadata()](https://github.com/stackabletech/stackable-utils/blob/273ec983d6c0b1ea1852d9633ed56b8123054b39/olm/build-manifests.sh#L39) 
+- [ ] Update the supported OpenShift version range in the function [generate_metadata()](https://github.com/stackabletech/stackable-utils/blob/273ec983d6c0b1ea1852d9633ed56b8123054b39/olm/build-manifests.sh#L39)
 - [ ] Create release branch (from `main`) in the openshift operator repository
 
       cd $HOME/repo/stackable/openshift-certified-operators
       git switch -c stackable-secret-24.11.0
-      
+
 - [ ] Generate manifests
-      
+
       ./olm/build-manifests.sh -r 24.11.0 \
       -c $HOME/repo/stackable/openshift-certified-operators \
       -o $HOME/repo/stackable/secret-operator
