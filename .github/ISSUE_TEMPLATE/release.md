@@ -31,7 +31,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 
 ```[tasklist]
 ### Early Pre-release tasks
-- [ ] Create a "Post YY.M.X release" retro issue (does this need a template? See https://github.com/stackabletech/issues/issues/669)
+- [ ] [Create a "Release Retro" issue](https://github.com/stackabletech/issues/issues/new?template=release-retro.md)
 - [ ] Define product versions to include in the next release
 - [ ] [Update and release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?template=release-workspace-members.md)
 - [ ] [Update Rust toolchain of operators](https://github.com/stackabletech/operator-templating/issues/new?template=pre-release.md)
