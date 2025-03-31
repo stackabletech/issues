@@ -31,11 +31,11 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 
 ```[tasklist]
 ### Early Pre-release tasks
-- [ ] [Create a "Release Retro" issue](https://github.com/stackabletech/issues/issues/new?template=release-retro.md)
+- [ ] [Create a "Release Retro" issue](https://github.com/stackabletech/issues/issues/new?template=08-release-retro.md)
 - [ ] Define product versions to include in the next release
 - [ ] [Update and release operator-rs workspace members](https://github.com/stackabletech/operator-rs/issues/new?template=release-workspace-members.md)
 - [ ] [Update Rust toolchain of operators](https://github.com/stackabletech/operator-templating/issues/new?template=pre-release.md)
-- [ ] [Update Rust dependencies of operators](https://github.com/stackabletech/issues/issues/new?template=pre-release-operator-rust-deps.md)
+- [ ] [Update Rust dependencies of operators](https://github.com/stackabletech/issues/issues/new?template=05-pre-release-operator-rust-deps.md)
 - [ ] [Major or Minor Container Images updates](https://github.com/stackabletech/docker-images/issues/new?template=early-pre-release.md)
 - [ ] [Patch Container Images updates](https://github.com/stackabletech/docker-images/issues/new?template=early-pre-release.md)
 ```
@@ -46,7 +46,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 ```[tasklist]
 ### Pre-release
 - [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
-- [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=pre-release-getting-started-scripts.md)
+- [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=03-pre-release-getting-started-scripts.md)
 - [ ] [Check and update demo charts](https://github.com/stackabletech/demos/issues/new?template=pre-release-chart-updates.md)
 - [ ] [Test demos and upgrade from stable to nightly release](https://github.com/stackabletech/demos/issues/new?template=pre-release-upgrade-testing.md)
 - [ ] Ensure integration tests are successful on OpenShift
@@ -81,7 +81,7 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 - [ ] Generate CRD docs [website](https://crds.stackable.tech/) for the new release by following these [instructions](https://github.com/stackabletech/crddocs)
 - [ ] Test `stackablectl` with locally updated (to new release number) `releases.yaml`
 - [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
-- [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=release-getting-started-scripts.md)
+- [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=07-release-getting-started-scripts.md)
 - [ ] [Test demos and upgrade from previous to this release](https://github.com/stackabletech/demos/issues/new?template=release-upgrade-testing.md)
 - [ ] Check that an upgrade can be performed on an existing cluster without data loss (cycling demo)
 - [ ] Run all integration tests (for both `x86_64` and `aarch64`)
@@ -132,5 +132,6 @@ Marketing tasks can now reference published documentation.
 - [ ] Openshift certification. Create an issue from this [template](https://github.com/stackabletech/issues/blob/main/.github/ISSUE_TEMPLATE/olm_manifests.md) for the OLM manifests
 - [ ] Mark any releases older than one year as "end-of-life" [in the documentation](https://github.com/stackabletech/documentation/blob/f751e7ff7cddacae7d2c6c2c6c1d1c877c7aa11c/antora.yml#L18) How? Ask Lars of course. He's good at that stuff.
 - [ ] Post YY.M.X release retro (use issue created at the start of the process)
-- [ ] [Create the next release tracking task](https://github.com/stackabletech/issues/issues/new?template=release.md) (if the date is available)
+- [ ] Update the release tracking template (optional)
+- [ ] [Create the next release tracking task](https://github.com/stackabletech/issues/issues/new?template=06-release.md) (if the date is available)
 ```
