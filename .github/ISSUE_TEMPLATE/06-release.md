@@ -130,7 +130,7 @@ Marketing tasks can now reference published documentation.
 #### Post-release tasks
 - [ ] Update the list of supported SDP releases in Jira (ping Jim)
 - [ ] Openshift certification. Create an issue from this [template](https://github.com/stackabletech/issues/blob/main/.github/ISSUE_TEMPLATE/olm_manifests.md) for the OLM manifests
-- [ ] Mark any releases older than one year as "end-of-life" [in the documentation](https://github.com/stackabletech/documentation/blob/f751e7ff7cddacae7d2c6c2c6c1d1c877c7aa11c/antora.yml#L18) How? Ask Lars of course. He's good at that stuff.
+- [ ] Mark any releases older than one year as "end-of-life" [in the documentation](https://github.com/stackabletech/documentation/blob/f751e7ff7cddacae7d2c6c2c6c1d1c877c7aa11c/antora.yml#L18) (update antora.yaml on the applicable branches).
 - [ ] Post YY.M.X release retro (use issue created at the start of the process)
 - [ ] Update the release tracking template (optional)
 - [ ] [Create the next release tracking task](https://github.com/stackabletech/issues/issues/new?template=06-release.md) (if the date is available)
