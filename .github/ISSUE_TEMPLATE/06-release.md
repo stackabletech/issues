@@ -18,7 +18,10 @@ assignees: ''
 > Important dates:
 > - ... - Release planning
 > - ... - Lock product versions
-> - ... - Target release date
+> - ... - Final operator-rs release at CoB
+> - ... - Begin bumping operator-rs crates in each operator
+> - ... - Begin release-day tasks (release branches are cut)
+> - ... - Target release date (marketable)
 
 ## Release checklists
 
