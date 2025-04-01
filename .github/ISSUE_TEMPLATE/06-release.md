@@ -52,7 +52,7 @@ Replace the items in the task lists below with the applicable Pull Requests / Is
 - [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=03-pre-release-getting-started-scripts.md)
 - [ ] [Check and update demo charts](https://github.com/stackabletech/demos/issues/new?template=pre-release-chart-updates.md)
 - [ ] [Test demos and upgrade from stable to nightly release](https://github.com/stackabletech/demos/issues/new?template=pre-release-upgrade-testing.md)
-- [ ] Ensure integration tests are successful on OpenShift
+- [ ] Ensure integration tests are successful on OpenShift (run with `--test-suite openshift` against Replicated OKD)
 - [ ] Check stackable-utils scripts in dry-run mode work
 ```
 
@@ -73,22 +73,24 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 
 ```[tasklist]
 #### Technical tasks
-- [ ] Temporarily remove branch protection before pushing the release branches/tags
 - [ ] Create release branch for docker-images (see stackable-utils for script to create branches)
-- [ ] Create release tag(s) for docker-images (see stackable-utils for scripts to create tags)
 - [ ] Create release branches for operators (see stackable-utils for script to create branches)
-- [ ] Create release tag(s) for operators (see stackable-utils for scripts to create tags)
-- [ ] Create release tag for stackable-cockpit (optional, highly experimental, requires manual tag creation)
-- [ ] Update release version in changelogs on main branches (see stackable-utils for script to do this)
 - [ ] Create release branch for demos (see stackable-utils for script to create branches)
+- [ ] _Wait for images to be built_
+- [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=07-release-getting-started-scripts.md) for the Release Candidate
+- [ ] [Test demos and upgrade from previous to this release](https://github.com/stackabletech/demos/issues/new?template=release-upgrade-testing.md) for Release Candidate (only fresh install)
+- [ ] Create release tag(s) for docker-images (see stackable-utils for scripts to create tags)
+- [ ] Create release tag(s) for operators (see stackable-utils for scripts to create tags)
+- [ ] Update release version in changelogs on main branches (see stackable-utils for script to do this)
 - [ ] Generate CRD docs [website](https://crds.stackable.tech/) for the new release by following these [instructions](https://github.com/stackabletech/crddocs)
 - [ ] Test `stackablectl` with locally updated (to new release number) `releases.yaml`
 - [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
 - [ ] [Check and update getting-started scripts](https://github.com/stackabletech/issues/issues/new?template=07-release-getting-started-scripts.md)
 - [ ] [Test demos and upgrade from previous to this release](https://github.com/stackabletech/demos/issues/new?template=release-upgrade-testing.md)
 - [ ] Check that an upgrade can be performed on an existing cluster without data loss (cycling demo)
-- [ ] Run all integration tests (for both `x86_64` and `aarch64`)
-- [ ] OpenShift testing (discuss internally)
+- [ ] Run all integration tests (for both `x86_64` and ~`aarch64`~ (defer aarch64 until interu is used))
+- [ ] Ensure integration tests are successful on OpenShift (run with `--test-suite openshift` against Replicated OKD)
+- [ ] Release stackablectl
 ```
 
 > [!TIP]
@@ -99,12 +101,14 @@ This will not be so crucial with release branches, but is nonetheless sensible a
 ```[tasklist]
 #### Documentation tasks
 - [ ] Create a stackabletech/documentation branch called `docs/release-notes-YY.M.X`
+- [ ] Compile list of new product features in newly supported versions for the YY.M.X release (for the blog post)
 - [ ] Begin writing the release notes with the [Pull Request template](https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md&title=chore(tracking):%20Release%20Notes%20for%20SDP%20YY.M.X)
-- [ ] Update SDP release version in documentation/modules/ROOT/pages/getting-started.adoc and test the release install command
+- [ ] Update SDP release version in `documentation/modules/ROOT/pages/getting-started.adoc` and test the release install command
 - [ ] Cut a release branch (see [scripts/make-release-branch.sh](https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh))
 - [ ] Update releases in the playbook (see [scripts/publish-new-version.sh](https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh))
+- [ ] Remove any references to HEAD and main from the Antora playbooks on the release branch (replace with the release branch)
 - [ ] Update antora.yaml version in stackabletech/demos on the release branch - the stackable-utils release-scripts should do this like they do for products and operators.
-- [ ] Set the release to "Released" in the Feature Tracker and create a new release (how?)
+- [ ] Set the release to "Released" in the Feature Tracker and create a new release (ping @lfrancke)
 - [ ] Update the getting-started page in the main docs and check it works with this release: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting-started.adoc
 ```
 
@@ -131,6 +135,7 @@ Marketing tasks can now reference published documentation.
 
 ```[tasklist]
 #### Post-release tasks
+- [ ] Test demo upgrades, which were skipped in the previous testing (optional)
 - [ ] Update the list of supported SDP releases in Jira (ping Jim)
 - [ ] Openshift certification. Create an issue from this [template](https://github.com/stackabletech/issues/blob/main/.github/ISSUE_TEMPLATE/olm_manifests.md) for the OLM manifests
 - [ ] Mark any releases older than one year as "end-of-life" [in the documentation](https://github.com/stackabletech/documentation/blob/f751e7ff7cddacae7d2c6c2c6c1d1c877c7aa11c/antora.yml#L18) (update antora.yaml on the applicable branches).
