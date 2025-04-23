@@ -124,7 +124,7 @@ assignees: ''
 - [ ] Ensure integration tests are successful on OpenShift (run with `--test-suite openshift` against Replicated OKD)
 
 [rv-1]: https://github.com/stackabletech/issues/issues/new?template=07-release-getting-started-scripts.md
-[rv-2]: https://github.com/stackabletech/demos/issues/new?template=release-upgrade-testing.md
+[rv-2]: https://github.com/stackabletech/demos/issues/new?template=release-from-scratch-testing.md
 
 ## Documentation tasks
 
