@@ -35,7 +35,7 @@ assignees: ''
 - [ ] [Update Rust toolchain of operators][epr-3]
 - [ ] [Update Rust dependencies of operators][epr-4]
 - [ ] [Major or Minor Container Images updates][epr-5]
-- [ ] [Patch Container Images updates][epr-6]
+- [ ] [Patch Container Images updates][epr-5] (Do not reuse the previous issue)
 - [ ] Run `niv update` and test via `make run-dev` (operator-templating)
 
 [epr-1]: https://github.com/stackabletech/issues/issues/new?template=08-release-retro.md
@@ -43,7 +43,6 @@ assignees: ''
 [epr-3]: https://github.com/stackabletech/operator-templating/issues/new?template=pre-release.md
 [epr-4]: https://github.com/stackabletech/issues/issues/new?template=05-pre-release-operator-rust-deps.md
 [epr-5]: https://github.com/stackabletech/docker-images/issues/new?template=early-pre-release.md
-[epr-6]: https://github.com/stackabletech/docker-images/issues/new?template=early-pre-release.md
 
 ## Pre-release
 
