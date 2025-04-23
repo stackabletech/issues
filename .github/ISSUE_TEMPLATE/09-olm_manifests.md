@@ -64,25 +64,25 @@ This issue assumes you are generating OLM manifests for a released SDP version w
 
   ```shell
   cd $HOME/repo/stackable/openshift-certified-operators
-  git switch -c stackable-secret-24.11.0
+  git switch -c stackable-secret-YY.M.X
   ```
 
 - [ ] Generate manifests
 
   ```shell
-  ./olm/build-manifests.sh -r 24.11.0 \
+  ./olm/build-manifests.sh -r YY.M.X \
   -c $HOME/repo/stackable/openshift-certified-operators \
   -o $HOME/repo/stackable/secret-operator
   ```
 
 Options:
 
-- `-r 24.11.0` is the SDP release
+- `-r YY.M.X` is the SDP release
 - `-c $HOME/repo/stackable/openshift-certified-operators` the location of the openshift operator repository
 - `-o $HOME/repo/stackable/secret-operator` the location of the secret op
 
 - [ ] Copy the cluster service version file from the previous  version.
-- [ ] Copy the operator manifests file fro the previous version. For [secret](https://github.com/stackabletech/openshift-certified-operators/blob/main/operators/stackable-secret-operator/23.11.0/manifests/secret-operator-manifests.yaml) and [listener](https://github.com/stackabletech/openshift-certified-operators/blob/main/operators/stackable-listener-operator/23.11.0/manifests/listener-operator-manifests.yaml)
+- [ ] Copy the operator manifests file from the previous version. For [secret](https://github.com/stackabletech/openshift-certified-operators/blob/main/operators/stackable-secret-operator/OO.M.X/manifests/secret-operator-manifests.yaml) and [listener](https://github.com/stackabletech/openshift-certified-operators/blob/main/operators/stackable-listener-operator/OO.M.X/manifests/listener-operator-manifests.yaml)
 - [ ] Replace the contents of the deployment, and cluster role with the `template.spec` and `rules` from the newly generated files.
 - [ ] Remove the unused generated files : service account, operator cluster role (not the product cluster role), role binding, deployment.
 - [ ] Remove all Helm labels in all remaining files (including all labels from the cluster role).
@@ -96,12 +96,12 @@ Options:
 - [ ] Install the operator from the manifests generated in the previous step
 
   ```shell
-  /olm/build-bundles.sh -r 24.11.0 -o secret -c ~/repo/stackable/openshift-certified-operators -d
+  /olm/build-bundles.sh -r YY.M.X -o secret -c ~/repo/stackable/openshift-certified-operators -d
   ```
 
 Options:
 
-- `-r 24.11.0` version of the operator to install
+- `-r YY.M.X` version of the operator to install
 - `-o secret` name of the operator to install
 - `-c ~/repo/stackable/openshift-certified-operators` location of the openshift operator repository
 - `-d` deploy to the cluster
@@ -118,19 +118,19 @@ The steps are illustrated only once for the ZooKeeper operator but a list of all
 
   ```shell
   cd $HOME/repo/stackable/openshift-certified-operators
-  git switch -c stackable-zookeeper-24.11.0
+  git switch -c stackable-zookeeper-YY.M.X
   ```
 
-- [ ] Ensure appropriate branch (`release-24.11`) is checkout out in the ZooKeeper operator
+- [ ] Ensure appropriate branch (`release-YY.M`) is checkout out in the ZooKeeper operator
 - [ ] Generate manifests
 
   ```shell
   ./olm/build-manifests.py  \
   --openshift-versions v4.14-v4.16 \
   --repo-certified-operators ~/repo/stackable/openshift-certified-operators \
-  --channel 24.11 \
-  --release 24.11.0 \
-  --replaces 24.7.0 \
+  --channel YY.M \
+  --release YY.M.X \
+  --replaces OO.M.X \
   --repo-operator ~/repo/stackable/zookeeper-operator
   ```
 
@@ -140,7 +140,7 @@ See `./olm/build-manifests.py --help` for possible options.
 
 ```shell
 ./olm/build-bundles.sh \
--r 24.11.0 \
+-r YY.M.X \
 -o zookeeper \
 -c ~/repo/stackable/openshift-certified-operators \
 -d
