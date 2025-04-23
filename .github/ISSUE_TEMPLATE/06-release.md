@@ -13,6 +13,7 @@ assignees: ''
 
 > [!IMPORTANT]
 > Important dates:
+>
 > - ... - Release planning
 > - ... - Lock product versions
 > - ... - Final operator-rs release at CoB
@@ -75,8 +76,7 @@ assignees: ''
 - [ ] Create release branch for docker-images
 - [ ] Create release branches for operators
 - [ ] Create release branch for demos
-
-_Wait for images to be built before proceeding_
+- [ ] _Wait for images to be built before proceeding_
 
 ## Release candidate testing
 
@@ -110,7 +110,7 @@ _Wait for images to be built before proceeding_
 - [ ] Update release version in changelogs on main branches
 - [ ] _Wait for images to be built before proceeding_
 - [ ] Test `stackablectl` with locally updated (to new release number) `releases.yaml`
-- [ ] Update `release.yaml` in https://github.com/stackabletech/release/blob/main/releases.yaml
+- [ ] Update [release.yaml](https://github.com/stackabletech/release/blob/main/releases.yaml)
 - [ ] Release stackablectl
 
 ## Release verification
@@ -132,18 +132,24 @@ _Wait for images to be built before proceeding_
 > [!TIP]
 > Name the release-notes branch `docs/release-notes-YY.M.X` so that the link below takes you directly to the [Pull Request template][docs-pr-template].
 
-- [ ] Generate CRD docs [website](https://crds.stackable.tech/) for the new release by following these [instructions](https://github.com/stackabletech/crddocs)
+- [ ] Generate CRD docs [website][dt-1] for the new release by following these [instructions][dt-2]
 - [ ] Create a stackabletech/documentation branch called `docs/release-notes-YY.M.X`
 - [ ] Compile list of new product features in newly supported versions for the YY.M.X release (for the blog post)
-- [ ] Begin writing the release notes with the [Pull Request template](https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md&title=chore(tracking):%20Release%20Notes%20for%20SDP%20YY.M.X)
+- [ ] Begin writing the release notes with the [Pull Request template][dt-3]
 - [ ] Update SDP release version in `documentation/modules/ROOT/pages/getting-started.adoc` and test the release install command
-- [ ] Cut a release branch (see [scripts/make-release-branch.sh](https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh))
-- [ ] Update releases in the playbook (see [scripts/publish-new-version.sh](https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh))
+- [ ] Cut a release branch (see [scripts/make-release-branch.sh][dt-4])
+- [ ] Update releases in the playbook (see [scripts/publish-new-version.sh][dt-5])
 - [ ] Remove any references to HEAD and main from the Antora playbooks on the release branch (replace with the release branch)
 - [ ] Update antora.yaml version in stackabletech/demos on the release branch - the stackable-utils release-scripts should do this like they do for products and operators.
 - [ ] Set the release to "Released" in the Feature Tracker and create a new release (ping @lfrancke)
-- [ ] Update the getting-started page in the main docs and check it works with this release: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting-started.adoc
+- [ ] Update the [getting-started page][dt-6] in the main docs and check it works with this release
 
+[dt-1]: https://crds.stackable.tech/
+[dt-2]: https://github.com/stackabletech/crddocs
+[dt-3]: https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md&title=chore(tracking):%20Release%20Notes%20for%20SDP%20YY.M.X
+[dt-4]: https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh
+[dt-5]: https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh
+[dt-6]: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting-started.adoc
 [docs-pr-template]: https://github.com/stackabletech/documentation/tree/main/.github/PULL_REQUEST_TEMPLATE/release-notes.md&title=chore(tracking):%20Release%20Notes%20for%20SDP%20YY.M.X
 
 ## Marketing tasks
@@ -162,7 +168,7 @@ _Wait for images to be built before proceeding_
 - [ ] Post an announcement in the GitHub [Discussions Announcement forum](https://github.com/stackabletech/community/discussions/categories/announcements) and make it a pinned discussion while at the same time removing the old pinned thread
 - [ ] Post an announcement in Discord
 - [ ] Post an announcement on DOK Community in the #be-shameless Channel (Ping Lars or Jim)
-- [ ] Post an announcement via OSBA (Ping Lars, info@osb-alliance.com)
+- [ ] Post an announcement via OSBA (Ping Lars, <mailto:info@osb-alliance.com>)
 - [ ] Send announcement to Kubernetes Podcast (Ping Lars)
 - [ ] Send announcement to Heiser
 - [ ] Ping the stackable-ionos-tech channel or anyone responsible once all tags are created
@@ -172,7 +178,7 @@ _Wait for images to be built before proceeding_
 - [ ] Test demo upgrades, which were skipped in the previous testing (optional)
 - [ ] Update the list of supported SDP releases in Jira (ping @Jimvin)
 - [ ] Openshift certification. [Create an issue][pt-1] to track the creation of the OLM manifests
-- [ ] Mark any releases older than one year as "end-of-life" in the documentation (update [antora.yaml][pr-2] on the applicable branches).
+- [ ] Mark any releases older than one year as "end-of-life" in the documentation (update [antora.yaml][pt-2] on the applicable branches).
 - [ ] _Link to release retro issue (use issue created at the start of the process)_
 - [ ] Update the release tracking templates (optional)
 - [ ] [Create the next release tracking task][pt-3] (if the date is available)

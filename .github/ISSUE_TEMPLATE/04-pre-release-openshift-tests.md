@@ -22,7 +22,7 @@ Part of <https://github.com/stackabletech/issues/issues/TRACKING_ISSUE>
 
 Make sure to run the tests using the following parameters:
 
-```
+```plain
 TEST_PLATFORM: OpenShift on replicated.com (4.15.0-okd)
 GIT_BRANCH_OR_TAG: origin/main
 OPERATOR_VERSION: 0.0.0-dev

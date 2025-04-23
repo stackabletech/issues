@@ -7,15 +7,13 @@ assignees: ''
 
 ---
 
-# Title
-
 <!--
-- Ensure the title is specific and descriptive
+- Ensure the PR title is specific and descriptive
 - Avoid acronyms if possible
 -->
 
 ## Description
-    
+
 <!--
 - "What" are we trying to achieve
 - Briefly describe what this issue aims to achieve
@@ -25,7 +23,7 @@ Examples:
 -->
 
 ## Value
-         
+
 <!--
 - "Why" do we want to do this
 - Clearly define the value this brings to customers or why else it is important if not _directly_ for customers (e.g. internal tooling or improvements, technical debt, ...)
@@ -38,7 +36,7 @@ Examples:
 -->
 
 ## Dependencies
-    
+
 <!--
 - Consider and name any internal and external dependencies and constraints
 - List all known necessary resources (e.g. cluster, customers, people, repositories, libraries...)
@@ -59,14 +57,14 @@ Examples:
         - Marketing / Showcase
 - Initial tasks might just be _separate_ research tasks, which, upon completion, lead to more tasks in this task/epic
 - When creating the list of tasks make sure to put them in an order and focus on creating minimum marketable features
-- This is the _Definition of Done_ which (mostly, exception are marketing tasks) represents the technical "completeness" of a task 
+- This is the _Definition of Done_ which (mostly, exception are marketing tasks) represents the technical "completeness" of a task
 
 Example:
   - Marketing: Prepare a blog post outlining the new CRD versioning support, our policies around CRD versioning and the current versions we do support
 -->
 
 ## Acceptance Criteria
-  
+
 <!--
 - List acceptance criteria
 - Define clear objective criteria for when we would consider this issue "Done"
@@ -80,12 +78,11 @@ Example:
     - Traces are exported via OTLP and can be seen in Jaeger (or equivalent trace visualisation tool) (achieves a goal, while only being as prescriptive as necessary)
     - CRD versioning is seamlessly integrated into our operators, allowing for the specification of multiple versions within CRDs.
     - Backward compatibility is maintained for at least two previous versions of CRDs.
-    - 
 
 -->
 
 ## (Information Security) Risk Assessment
-      
+
 <!--
 - Outline any information security (this includes cybersecurity) or any other obvious risks and the controls how to mitigate them
 - This is relevant for ISO 27001, the Cyber Resilience Act and other standards/norms
@@ -99,7 +96,6 @@ Example:
     - ...
 -->
 
-
 ## Accessibility Assessment
 
 <!--
@@ -109,17 +105,16 @@ Example:
 -->
 
 ## Quality
-          
+
 <!--
 - Outline how this issue will be tested
 - Compatibility:
   - Try to ensure compatibility with all our supported versions (e.g. Kubernetes, OpenShift, product versions)
   - List any potential compatibility issues you're aware of
--->   
-
+-->
 
 ## Release Notes
-                     
+
 <!--
 - Write a short sentence or abstract that can go into the release notes
 - This way it is also documented for anyone finding _just this_ issue later
@@ -135,7 +130,6 @@ NOTE: This section is not meant to be displayed, therefore it is in a comment. Y
 - [ ] Delete everything that is irrelevant for this particular issue.
 - [ ] Add appropriate labels
 
-
 - There are different types of issues/epics, which might require different subsets (or no) sections of the above
     - e.g. "Update product versions"
     - e.g. "Implement new feature"
@@ -143,4 +137,4 @@ NOTE: This section is not meant to be displayed, therefore it is in a comment. Y
 - If this is part of another issue please make sure to link the two in both places (parent & child)
 - If CRD changes (not necessarily breaking) are required, make sure structs/enums/fields are documented and are rendered properly in the CRD generation tool
 - Also see our [Development Philosophy](https://app.nuclino.com/Stackable/Stackable-Handbook/Development-Philosophy-ba280b20-b8cd-4fb6-a863-ff6d8c9f1af2)
--->    
+-->
