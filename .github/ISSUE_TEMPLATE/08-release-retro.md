@@ -11,25 +11,11 @@ After the YY.M.X release, we will hold a release-retro to discuss what went well
 - [ ] Schedule the retro
 - [ ] Create action items during the retro
 
-The task list below can capture items as we think of them.
-
-<!--details-->
-```[tasklist]
-### Items for discussion
-```
-<!--/details-->
-
 > [!TIP]
-> During the retro, edit this description and remove the commented actions task list below
+> Feel free to add comments to this issue. We will then hold a post-release retro and product action items.
 
-<!--
-    During the retro, uncomment the below to record actions into.
-    You can then wrap the above tasklist in a <details> tag to hide it away
--->
-<!--
+<!-- uncomment after the release retro
+## Action items
 
-```[tasklist]
-### Action items
-```
-
+- [ ] ...
 -->
