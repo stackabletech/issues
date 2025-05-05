@@ -31,38 +31,38 @@ assignees: ''
 
 - [ ] [Create a "Release Retro" issue][epr-1]
 - [ ] Define product versions to include in the next release
-- [ ] [Update and release operator-rs workspace members][epr-2]
-- [ ] [Update Rust toolchain of operators][epr-3]
-- [ ] [Update Rust dependencies of operators][epr-4]
-- [ ] [Major or Minor Container Images updates][epr-5]
-- [ ] [Patch Container Images updates][epr-5] (Do not reuse the previous issue)
+- [ ] [Major or Minor Container Images updates][epr-2]
+- [ ] [Patch Container Images updates][epr-2] (Do not reuse the previous issue)
 - [ ] Run `niv update` and test via `make run-dev` (operator-templating)
 
 [epr-1]: https://github.com/stackabletech/issues/issues/new?template=08-release-retro.md
-[epr-2]: https://github.com/stackabletech/operator-rs/issues/new?template=release-workspace-members.md
-[epr-3]: https://github.com/stackabletech/operator-templating/issues/new?template=pre-release.md
-[epr-4]: https://github.com/stackabletech/issues/issues/new?template=05-pre-release-operator-rust-deps.md
-[epr-5]: https://github.com/stackabletech/docker-images/issues/new?template=early-pre-release.md
+[epr-2]: https://github.com/stackabletech/docker-images/issues/new?template=early-pre-release.md
 
 ## Pre-release
 
 > [!TIP]
 > These tasks should be done a week or so before the release date.
 
+- [ ] [Update and release operator-rs workspace members][pr-1]
+- [ ] [Update Rust toolchain of operators][pr-2]
+- [ ] [Update Rust dependencies of operators][pr-3]
 - [ ] Run all of the test suites in Jenkins (with all product versions, not just "nightly")
-- [ ] [Check and update getting-started scripts][pr-1]
-- [ ] [Check and update demo charts][pr-2]
-- [ ] [Test demo upgrades (stable to nightly)][pr-3]
-- [ ] [Test demos from scratch (nightly)][pr-4]
+- [ ] [Check and update getting-started scripts][pr-4]
+- [ ] [Check and update demo charts][pr-5]
+- [ ] [Test demo upgrades (stable to nightly)][pr-6]
+- [ ] [Test demos from scratch (nightly)][pr-7]
 - [ ] Ensure integration tests are successful on OpenShift (run with `--test-suite openshift` against Replicated OKD)
 - [ ] Check [stackable-utils] scripts in dry-run mode work
-- [ ] Search for open issues labeled with [scheduled-for/YY.M.X][pr-5]
+- [ ] Search for open issues labeled with [scheduled-for/YY.M.X][pr-8]
 
-[pr-1]: https://github.com/stackabletech/issues/issues/new?template=03-pre-release-getting-started-scripts.md
-[pr-2]: https://github.com/stackabletech/demos/issues/new?template=pre-release-chart-updates.md
-[pr-3]: https://github.com/stackabletech/demos/issues/new?template=pre-release-upgrade-testing.md
-[pr-4]: https://github.com/stackabletech/demos/issues/new?template=pre-release-from-scratch-testing.md
-[pr-5]: https://github.com/search?q=org%3Astackabletech+label%3Ascheduled-for%2FYY.M.X&type=issues&state=open
+[pr-1]: https://github.com/stackabletech/operator-rs/issues/new?template=release-workspace-members.md
+[pr-2]: https://github.com/stackabletech/operator-templating/issues/new?template=pre-release.md
+[pr-3]: https://github.com/stackabletech/issues/issues/new?template=05-pre-release-operator-rust-deps.md
+[pr-4]: https://github.com/stackabletech/issues/issues/new?template=03-pre-release-getting-started-scripts.md
+[pr-5]: https://github.com/stackabletech/demos/issues/new?template=pre-release-chart-updates.md
+[pr-6]: https://github.com/stackabletech/demos/issues/new?template=pre-release-upgrade-testing.md
+[pr-7]: https://github.com/stackabletech/demos/issues/new?template=pre-release-from-scratch-testing.md
+[pr-8]: https://github.com/search?q=org%3Astackabletech+label%3Ascheduled-for%2FYY.M.X&type=issues&state=open
 
 ## Release branching
 
