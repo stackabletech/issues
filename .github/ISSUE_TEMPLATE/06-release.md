@@ -29,13 +29,15 @@ assignees: ''
 > [!TIP]
 > These tasks should be done earlier in the process to lessen the burden at Pre-release time.
 
-- [ ] [Create a "Release Retro" issue][epr-1]
+- [ ] [Create release and release-retro labels][epr-1] if not already present
+- [ ] [Create a "Release Retro" issue][epr-2]
 - [ ] Define product versions to include in the next release
-- [ ] [Major or Minor Container Images updates][epr-2]
-- [ ] [Patch Container Images updates][epr-2] (Do not reuse the previous issue)
+- [ ] [Major or Minor Container Images updates][epr-3]
+- [ ] [Patch Container Images updates][epr-3] (Do not reuse the previous issue)
 
-[epr-1]: https://github.com/stackabletech/issues/issues/new?template=08-release-retro.md
-[epr-2]: https://github.com/stackabletech/docker-images/issues/new?template=early-pre-release.md
+[epr-1]: https://github.com/stackabletech/infrastructure/blob/main/label_sync/labels.yml
+[epr-2]: https://github.com/stackabletech/issues/issues/new?template=08-release-retro.md
+[epr-3]: https://github.com/stackabletech/docker-images/issues/new?template=early-pre-release.md
 
 ## Pre-release
 
