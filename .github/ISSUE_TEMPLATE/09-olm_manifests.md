@@ -10,23 +10,24 @@ This is for tracking distributed work. For instructions on how to proceed with e
 
 Please follow this list in order at least until the zookeeper-operator before parallelizing.
 
-| Operator  | Maintainer | Branch                  | Kuttl Tests        | Cert Pipeline PR    | Notes |
-| --------- | ---------- | ----------------------- | ------------------ | ------------------- | ----- |
-| commons   | GH handle  | branch name in the fork | :white_check_mark: | link to upstream PR |       |
-| secret    |            |                         |                    |                     |       |
-| listener  |            |                         |                    |                     |       |
-| zookeeper |            |                         |                    |                     |       |
-| hdfs      |            |                         |                    |                     |       |
-| hive      |            |                         |                    |                     |       |
-| hbase     |            |                         |                    |                     |       |
-| opa       |            |                         |                    |                     |       |
-| druid     |            |                         |                    |                     |       |
-| kafka     |            |                         |                    |                     |       |
-| nifi      |            |                         |                    |                     |       |
-| spark     |            |                         |                    |                     |       |
-| superset  |            |                         |                    |                     |       |
-| airflow   |            |                         |                    |                     |       |
-| trino     |            |                         |                    |                     |       |
+| Operator   | Maintainer | Branch                  | Kuttl Tests        | Cert Pipeline PR    | Notes |
+| ---------- | ---------- | ----------------------- | ------------------ | ------------------- | ----- |
+| commons    | GH handle  | branch name in the fork | :white_check_mark: | link to upstream PR |       |
+| secret     |            |                         |                    |                     |       |
+| listener   |            |                         |                    |                     |       |
+| zookeeper  |            |                         |                    |                     |       |
+| hdfs       |            |                         |                    |                     |       |
+| hive       |            |                         |                    |                     |       |
+| hbase      |            |                         |                    |                     |       |
+| opa        |            |                         |                    |                     |       |
+| opensearch |            |                         |                    |                     |       |
+| druid      |            |                         |                    |                     |       |
+| kafka      |            |                         |                    |                     |       |
+| nifi       |            |                         |                    |                     |       |
+| spark      |            |                         |                    |                     |       |
+| superset   |            |                         |                    |                     |       |
+| airflow    |            |                         |                    |                     |       |
+| trino      |            |                         |                    |                     |       |
 
 ## Description
 
