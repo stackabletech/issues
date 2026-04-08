@@ -170,7 +170,7 @@ assignees: ''
 - [ ] Post an announcement on DOK Community in the #be-shameless Channel (Ping Lars or Jim)
 - [ ] Post an announcement via OSBA (Ping Lars, <mailto:info@osb-alliance.com>)
 - [ ] Send announcement to Kubernetes Podcast (Ping Lars)
-- [ ] Send announcement to Heiser
+- [ ] Send announcement to Heise
 - [ ] Ping the stackable-ionos-tech channel or anyone responsible once all tags are created
 
 ## Post-release tasks
