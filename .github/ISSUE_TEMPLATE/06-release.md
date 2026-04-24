@@ -1,7 +1,7 @@
 ---
 name: Release Tracking
 about: This template can be used to track the progress of the SDP
-title: "chore(tracking): SDP Release YY.M.X"
+title: "tracking: SDP Release YY.M.X"
 labels: ['epic']
 assignees: ''
 ---
@@ -146,11 +146,11 @@ assignees: ''
 
 [dt-1]: https://crds.stackable.tech/
 [dt-2]: https://github.com/stackabletech/crddocs
-[dt-3]: https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md&title=chore(tracking):%20Release%20Notes%20for%20SDP%20YY.M.X
+[dt-3]: https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md&title=tracking:%20Release%20Notes%20for%20SDP%20YY.M.X
 [dt-4]: https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh
 [dt-5]: https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh
 [dt-6]: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting-started.adoc
-[docs-pr-template]: https://github.com/stackabletech/documentation/tree/main/.github/PULL_REQUEST_TEMPLATE/release-notes.md&title=chore(tracking):%20Release%20Notes%20for%20SDP%20YY.M.X
+[docs-pr-template]: https://github.com/stackabletech/documentation/tree/main/.github/PULL_REQUEST_TEMPLATE/release-notes.md&title=tracking:%20Release%20Notes%20for%20SDP%20YY.M.X
 
 ## Marketing tasks
 
