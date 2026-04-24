@@ -1,7 +1,7 @@
 ---
 name: OLM Manifest Guide
 about: A task list for OLM manifest generation for certification
-title: 'chore(tracking): OLM Manifests for SDP Release YY.M.X'
+title: 'tracking: OLM Manifests for SDP Release YY.M.X'
 labels: ''
 assignees: ''
 ---

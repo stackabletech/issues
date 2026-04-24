@@ -1,7 +1,7 @@
 ---
 name: Pre-Release Operator Rust Updates
 about: This template can be used to track the progress of Rust updates across our operators leading up to the Stackable release
-title: "chore(tracking): Update Rust dependencies of operators before SDP Release YY.M.X"
+title: "tracking: Update Rust dependencies of operators before SDP Release YY.M.X"
 labels: ['epic']
 assignees: ''
 ---
