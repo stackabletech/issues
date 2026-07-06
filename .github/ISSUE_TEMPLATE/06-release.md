@@ -143,7 +143,7 @@ assignees: ''
 - [ ] Update antora.yaml version in stackabletech/demos on the release branch - the stackable-utils release-scripts should do this like they do for products and operators.
 - [ ] Set the release to "Released" in the Feature Tracker and create a new release (ping @lfrancke)
 - [ ] Update the [getting-started page][dt-6] in the main docs and check it works with this release
-- [ ] Update `llms.txt` on the [Stackable Hub][dt-7] to reflect the now current release and history
+- [ ] Update release information on the [Stackable Portal][dt-7] to reflect the now current release and history
 
 [dt-1]: https://crds.stackable.tech/
 [dt-2]: https://github.com/stackabletech/crddocs
@@ -151,7 +151,7 @@ assignees: ''
 [dt-4]: https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh
 [dt-5]: https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh
 [dt-6]: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting-started.adoc
-[dt-7]: https://hub.stackable.tech/
+[dt-7]: https://portal.stackable.build/releases
 [docs-pr-template]: https://github.com/stackabletech/documentation/tree/main/.github/PULL_REQUEST_TEMPLATE/release-notes.md&title=tracking:%20Release%20Notes%20for%20SDP%20YY.M.X
 
 ## Marketing tasks
