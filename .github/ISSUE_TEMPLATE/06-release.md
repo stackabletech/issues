@@ -132,7 +132,7 @@ assignees: ''
 > [!TIP]
 > Name the release-notes branch `docs/release-notes-YY.M.X` so that the link below takes you directly to the [Pull Request template][docs-pr-template].
 
-- [ ] Generate CRD docs [website][dt-1] for the new release by following these [instructions][dt-2]
+- [ ] Verify the new release and its CRDs show up on the [Stackable Hub][dt-1] (ingestion is automatic, no manual generation needed anymore)
 - [ ] Create a stackabletech/documentation branch called `docs/release-notes-YY.M.X`
 - [ ] Compile list of new product features in newly supported versions for the YY.M.X release (for the blog post)
 - [ ] Begin writing the release notes with the [Pull Request template][dt-3]
@@ -145,8 +145,7 @@ assignees: ''
 - [ ] Update the [getting-started page][dt-6] in the main docs and check it works with this release
 - [ ] Update release information on the [Stackable Portal][dt-7] to reflect the now current release and history
 
-[dt-1]: https://crds.stackable.tech/
-[dt-2]: https://github.com/stackabletech/crddocs
+[dt-1]: https://hub.stackable.tech/crds
 [dt-3]: https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md&title=tracking:%20Release%20Notes%20for%20SDP%20YY.M.X
 [dt-4]: https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh
 [dt-5]: https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh
