@@ -132,26 +132,25 @@ assignees: ''
 > [!TIP]
 > Name the release-notes branch `docs/release-notes-YY.M.X` so that the link below takes you directly to the [Pull Request template][docs-pr-template].
 
-- [ ] Generate CRD docs [website][dt-1] for the new release by following these [instructions][dt-2]
 - [ ] Create a stackabletech/documentation branch called `docs/release-notes-YY.M.X`
 - [ ] Compile list of new product features in newly supported versions for the YY.M.X release (for the blog post)
-- [ ] Begin writing the release notes with the [Pull Request template][dt-3]
+- [ ] Begin writing the release notes with the [Pull Request template][dt-1]
 - [ ] Update SDP release version in `documentation/modules/ROOT/pages/getting-started.adoc` and test the release install command
-- [ ] Cut a release branch (see [scripts/make-release-branch.sh][dt-4])
-- [ ] Update releases in the playbook (see [scripts/publish-new-version.sh][dt-5])
+- [ ] Cut a release branch (see [scripts/make-release-branch.sh][dt-2])
+- [ ] Update releases in the playbook (see [scripts/publish-new-version.sh][dt-3])
 - [ ] Remove any references to HEAD and main from the Antora playbooks on the release branch (replace with the release branch)
 - [ ] Update antora.yaml version in stackabletech/demos on the release branch - the stackable-utils release-scripts should do this like they do for products and operators.
 - [ ] Set the release to "Released" in the Feature Tracker and create a new release (ping @lfrancke)
-- [ ] Update the [getting-started page][dt-6] in the main docs and check it works with this release
-- [ ] Update release information on the [Stackable Portal][dt-7] to reflect the now current release and history
+- [ ] Update the [getting-started page][dt-4] in the main docs and check it works with this release
+- [ ] Update release information on the [Stackable Portal][dt-5] to reflect the now current release and history
+- [ ] Verify the new release and its CRDs show up on the [Stackable Hub][dt-6]
 
-[dt-1]: https://crds.stackable.tech/
-[dt-2]: https://github.com/stackabletech/crddocs
-[dt-3]: https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md&title=tracking:%20Release%20Notes%20for%20SDP%20YY.M.X
-[dt-4]: https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh
-[dt-5]: https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh
-[dt-6]: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting-started.adoc
-[dt-7]: https://portal.stackable.build/releases
+[dt-1]: https://github.com/stackabletech/documentation/compare/main...docs/release-notes-YY.M.X?template=release-notes.md&title=tracking:%20Release%20Notes%20for%20SDP%20YY.M.X
+[dt-2]: https://github.com/stackabletech/documentation/blob/main/scripts/make-release-branch.sh
+[dt-3]: https://github.com/stackabletech/documentation/blob/main/scripts/publish-new-version.sh
+[dt-4]: https://github.com/stackabletech/documentation/blob/main/modules/ROOT/pages/getting-started.adoc
+[dt-5]: https://portal.stackable.build/releases
+[dt-6]: https://hub.stackable.tech/crds
 [docs-pr-template]: https://github.com/stackabletech/documentation/tree/main/.github/PULL_REQUEST_TEMPLATE/release-notes.md&title=tracking:%20Release%20Notes%20for%20SDP%20YY.M.X
 
 ## Marketing tasks
