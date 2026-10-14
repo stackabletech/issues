@@ -39,7 +39,7 @@ assignees: ''
 [epr-1]: https://github.com/stackabletech/infrastructure/blob/main/label_sync/labels.yml
 [epr-2]: https://github.com/stackabletech/issues/issues/new?template=08-release-retro.md
 [epr-3]: https://github.com/stackabletech/docker-images/issues/new?template=early-pre-release.md
-[epr-4]: ttps://github.com/stackabletech/issues/issues/new?template=02-early-pre-release-new-product-features.md
+[epr-4]: https://github.com/stackabletech/issues/issues/new?template=02-early-pre-release-new-product-features.md
 
 ## Pre-release
 
