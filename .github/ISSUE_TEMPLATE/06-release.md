@@ -34,10 +34,12 @@ assignees: ''
 - [ ] Define product versions to include in the next release
 - [ ] [Major or Minor Container Images updates][epr-3]
 - [ ] [Patch Container Images updates][epr-3] (Do not reuse the previous issue)
+- [ ] [Compile list of new product features][epr-4] (for the blog post)
 
 [epr-1]: https://github.com/stackabletech/infrastructure/blob/main/label_sync/labels.yml
 [epr-2]: https://github.com/stackabletech/issues/issues/new?template=08-release-retro.md
 [epr-3]: https://github.com/stackabletech/docker-images/issues/new?template=early-pre-release.md
+[epr-4]: ttps://github.com/stackabletech/issues/issues/new?template=02-early-pre-release-new-product-features.md
 
 ## Pre-release
 
@@ -133,7 +135,6 @@ assignees: ''
 > Name the release-notes branch `docs/release-notes-YY.M.X` so that the link below takes you directly to the [Pull Request template][docs-pr-template].
 
 - [ ] Create a stackabletech/documentation branch called `docs/release-notes-YY.M.X`
-- [ ] Compile list of new product features in newly supported versions for the YY.M.X release (for the blog post)
 - [ ] Begin writing the release notes with the [Pull Request template][dt-1]
 - [ ] Update SDP release version in `documentation/modules/ROOT/pages/getting-started.adoc` and test the release install command
 - [ ] Cut a release branch (see [scripts/make-release-branch.sh][dt-2])
