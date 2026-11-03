@@ -77,6 +77,7 @@ assignees: ''
 
 - [ ] Create release branch for docker-images
 - [ ] Create release branches for operators
+- [ ] Create release branches for cockpit
 - [ ] Create release branch for demos
 - [ ] _Wait for images to be built before proceeding_
 
@@ -109,7 +110,8 @@ assignees: ''
 
 - [ ] Create release tag(s) for docker-images
 - [ ] Create release tag(s) for operators
-- [ ] Update release version in changelogs on main branches
+- [ ] Create release tag(s) for cockpit
+- [ ] Update release version in changelogs on main branches (`post-release.sh`)
 - [ ] _Wait for images to be built before proceeding_
 - [ ] Test `stackablectl` with locally updated (to new release number) `releases.yaml`
 - [ ] Update [release.yaml](https://github.com/stackabletech/release/blob/main/releases.yaml)
